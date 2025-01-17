@@ -7,22 +7,25 @@ document.addEventListener("DOMContentLoaded", (event) => {
     repeat: -1
   });
 
-  // animation navigation
-  let hero = gsap.timeline({
-    scrollTrigger: {
-      trigger: '#hero',
-      marker: true,
-      start: 'top top',
-      scrub: 1,
-    }
-  });
+  // only run in desktop
+  if (window.innerWidth > 768) {
+    // animation navigation
+    let hero = gsap.timeline({
+      scrollTrigger: {
+        trigger: '#hero',
+        marker: true,
+        start: 'top top',
+        scrub: 1,
+      }
+    });
 
-  hero.addLabel('spin1')
-    .from('#navigation', { width: "48%", duration: 1, ease: 'none' })
-    .addLabel('spin2')
-    .fromTo('#navigation-menu-desktop', { width: "0%", duration: 1, ease: 'none' }, { width: "100%", duration: 1, ease: 'none' }, "spin1")
-    .addLabel('spin3')
-    .fromTo('#navigation-menu-desktop', { opacity: 0, duration: 1, ease: 'none' }, { opacity: 1, duration: 1, ease: 'none' }, "spin1+=.5")
+    hero.addLabel('spin1')
+      .from('#navigation', { width: "48%", duration: 1, ease: 'none' })
+      .addLabel('spin2')
+      .fromTo('#navigation-menu-desktop', { width: "0%", duration: 1, ease: 'none' }, { width: "100%", duration: 1, ease: 'none' }, "spin1")
+      .addLabel('spin3')
+      .fromTo('#navigation-menu-desktop', { opacity: 0, duration: 1, ease: 'none' }, { opacity: 1, duration: 1, ease: 'none' }, "spin1+=.5")
+  }  
 
   let hero2 = gsap.timeline({
     scrollTrigger: {
