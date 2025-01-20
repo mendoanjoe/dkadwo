@@ -140,7 +140,6 @@ document.addEventListener("DOMContentLoaded", (event) => {
   const deviceWrapper = document.querySelector('#device-wrapper')
   const dividedBy = deviceWrapper.clientWidth > ((deviceScroll[0].clientWidth * 2)) ? 2 : 1;
   const deviceScrollWidth = ((deviceScroll.length - dividedBy) * deviceScroll[0].clientWidth) + ((deviceScroll.length - dividedBy) * 20);
-  console.log(deviceScroll.length - 1)
   let deviceList = gsap.timeline({
     scrollTrigger: {
       trigger: '#devices',
@@ -155,6 +154,92 @@ document.addEventListener("DOMContentLoaded", (event) => {
   .addLabel("device scroll")
   .to("#device-list", { x: `-${deviceScrollWidth}px`, duration: 1, ease: 'power1.inOut' })
   .to('#device-progress', { width: "100%", duration: 1, ease: 'power1.inOut' }, "device scroll")
+
+  // animation benefit
+  let benefitPanel = gsap.timeline({
+    scrollTrigger: {
+      trigger: '#benefit',
+      marker: true,
+      start: '-=200% top',
+    }
+  });
+
+  benefitPanel
+    .from('#benefit-text', { opacity: 0, duration: 1, ease: 'power1.inOut' })
+    .from("#benefit-list", { opacity: 0, duration: .5, ease: 'power1.inOut' })
+
+  // animation benefit
+  const benefitCard = gsap.utils.toArray("#benefit-list > div");
+  benefitCard.forEach((item) => {
+    const benefitIcon = item.querySelector('svg');
+    const benefitContent = item.querySelector('#benefit-content')
+    const benefit = gsap.timeline({ paused: true })
+      .to(benefitIcon, { color: "#6FD2C0", duration: .5, ease: 'power1.inOut' })
+      .from(benefitContent.children[1], { height: 0, marginTop: 0, opacity: 0, duration: .5, ease: 'power1.inOut' }, ">")
+      .fromTo(item, { background: "linear-gradient(180deg, #FFF 0%, #FFF 60%, #FFF 100%" }, { background: "linear-gradient(180deg, #E6EFEF 0%, rgba(237, 237, 237, 0.30) 60%, rgba(255, 255, 255, 0.00) 100%)", duration: 1, ease: 'power1.inOut'}, ">")
+
+    item.addEventListener("mouseenter", function () {
+      benefit.timeScale(4).play();
+    });
+
+    item.addEventListener("mouseleave", function () {
+      benefit.timeScale(4).reverse();
+    });
+  });
+
+  // animation meet
+  let meetPanel = gsap.timeline({
+    scrollTrigger: {
+      trigger: '#meet',
+      marker: true,
+      start: '-=200% top',
+    }
+  });
+
+  meetPanel
+    .from('#meet-text', { opacity: 0, duration: 1, ease: 'power1.inOut' })
+    .from("#meet-list", { opacity: 0, duration: .5, ease: 'power1.inOut' }, "<")
+
+  // animation how-works
+  let howWorkPanel = gsap.timeline({
+    scrollTrigger: {
+      trigger: '#how-works',
+      marker: true,
+      start: 'top center',
+    }
+  });
+
+  howWorkPanel
+    .from('#how-work-text', { opacity: 0, duration: 1, ease: 'power1.inOut' })
+    .from("#how-work-list", { opacity: 0, duration: .5, ease: 'power1.inOut' })
+
+  // animation how-works list
+  let howWorkList = gsap.timeline({
+    scrollTrigger: {
+      trigger: '#how-works',
+      marker: true,
+      start: 'top top',
+      scrub: 1,
+    }
+  });
+
+  howWorkList
+  .addLabel("how-work-list")
+  .to("#how-work-list", { y: "-100%", duration: 1, ease: 'power1.inOut' })
+
+  // animation footer
+  let footer = gsap.timeline({
+    scrollTrigger: {
+      trigger: '#footer',
+      marker: true,
+      start: 'top center',
+      end: '-=100% bottom',
+      scrub: 1,
+    }
+  });
+
+  footer
+    .fromTo('#footer', { background: "linear-gradient(180deg, #FFF 12.56%, #fff 38.79%, #fff 100%)" } ,{ background: "linear-gradient(180deg, #FFF 12.56%, #EDEDED 38.79%, #6FD2C0 100%)", duration: 1, ease: 'power1.inOut' })
 });
 
 function horizontalLoop(items, config) {
