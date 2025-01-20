@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
       .fromTo('#navigation-menu-desktop', { width: "0%", duration: 1, ease: 'none' }, { width: "100%", duration: 1, ease: 'none' }, "spin1")
       .addLabel('spin3')
       .fromTo('#navigation-menu-desktop', { opacity: 0, duration: 1, ease: 'none' }, { opacity: 1, duration: 1, ease: 'none' }, "spin1+=.5")
-  }  
+  }
 
   let hero2 = gsap.timeline({
     scrollTrigger: {
@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     .from('#hero-image', { opacity: 0, y: 100, duration: 1, ease: 'power1.inOut' }, "text-appear-=.1")
 
   // animation client feed
-  let clientFeed = gsap.timeline({
+  let clientFeedText = gsap.timeline({
     scrollTrigger: {
       trigger: '#client-feed',
       marker: true,
@@ -49,13 +49,112 @@ document.addEventListener("DOMContentLoaded", (event) => {
     }
   });
 
-  clientFeed.addLabel('text-appear')
-    .from('#client-feed-text', { opacity: 0, duration: .5, ease: 'power1.inOut' })
-    .addLabel('chat-appear')
+  clientFeedText.addLabel('text-appear')
+    .from('#client-feed-text', { opacity: 0, duration: 1, ease: 'power1.inOut' })
+
+  let clientFeed = gsap.timeline({
+    scrollTrigger: {
+      trigger: '#client-feed',
+      marker: true,
+      start: '-=120% top',
+      end: '+=30% bottom',
+      scrub: 1,
+    }
+  });
+
+  clientFeed
     .from('#client-feed-1', { opacity: 0, x: '50%', y: "100%", duration: .5, ease: 'power1.inOut' }, "client-feed-1")
     .from('#client-feed-2', { opacity: 0, x: '-50%', y: "100%", duration: .5, ease: 'power1.inOut' }, "client-feed-1")
     .from('#client-feed-3', { opacity: 0, x: '50%', y: "-100%", duration: .5, ease: 'power1.inOut' }, "client-feed-1")
     .from('#client-feed-4', { opacity: 0, x: '-50%', y: "-100%", duration: .5, ease: 'power1.inOut' }, "client-feed-1")
+
+  // animation number count title appear
+  let numberCount = gsap.timeline({
+    scrollTrigger: {
+      trigger: '#number-count',
+      marker: true,
+      start: '-=200% top',
+    }
+  });
+
+  numberCount
+    .from('#number-count-text', { opacity: 0, duration: 1, ease: 'power1.inOut' })
+    .from("#number-count-list", { opacity: 0, duration: .5, ease: 'power1.inOut' })
+
+  // animation number count on scroll
+  const panels = gsap.utils.toArray('#number-count-list > div');
+  const buttons = gsap.utils.toArray('#number-count-list > div > a');
+  const texts = gsap.utils.toArray('#number-count-list > div > p');
+  const panelHeight = document.querySelector('#number-count-list > div').clientHeight;
+  const buttonHeight = document.querySelector('#number-count-list > div > a').clientHeight + 20;
+  gsap.set(buttons, { position: "absolute", left: "10px", right: "10px", bottom: "10px" })
+  gsap.set(panels, { height: buttonHeight })
+  gsap.set(texts, { display: "none", opacity: 0 })
+  let numberCountScroll = gsap.timeline({
+    scrollTrigger: {
+      trigger: '#number-count',
+      marker: true,
+      start: '-=30% top',
+      end: '+=50% bottom',
+      scrub: 1,
+    }
+  })
+
+  panels.forEach((item, index) => {
+    numberCountScroll
+      .addLabel(`ncs-item-${index}`)
+      .to(item, { height: panelHeight, duration: 1, ease: 'power1.inOut' })
+      .to(texts[index], { display: "block", opacity: 1, duration: .5, ease: 'power1.inOut' }, `ncs-item-${index}`)
+  })
+
+  // animation price
+  const priceTexts = gsap.utils.toArray('#price-text > p');
+  let price = gsap.timeline({
+    scrollTrigger: {
+      trigger: '#price',
+      marker: true,
+      start: '-=200% top',
+      end: '+=40% bottom',
+    }
+  });
+
+  priceTexts.forEach(item => {
+    price.from(item, { opacity: 0, duration: 1, ease: 'power1.inOut' })
+  })
+
+  // animation devices title appear
+  let devices = gsap.timeline({
+    scrollTrigger: {
+      trigger: '#devices',
+      marker: true,
+      start: '-=200% top',
+    }
+  });
+
+  devices
+    .from('#device-text', { opacity: 0, duration: 1, ease: 'power1.inOut' })
+    .from("#device-list", { opacity: 0, duration: .5, ease: 'power1.inOut' })
+
+  // animation devices scroll
+  const deviceScroll = document.querySelectorAll('#device-list > div');
+  const deviceWrapper = document.querySelector('#device-wrapper')
+  const dividedBy = deviceWrapper.clientWidth > ((deviceScroll[0].clientWidth * 2)) ? 2 : 1;
+  const deviceScrollWidth = ((deviceScroll.length - dividedBy) * deviceScroll[0].clientWidth) + ((deviceScroll.length - dividedBy) * 20);
+  console.log(deviceScroll.length - 1)
+  let deviceList = gsap.timeline({
+    scrollTrigger: {
+      trigger: '#devices',
+      marker: true,
+      start: 'top top',
+      end: 'bottom bottom',
+      scrub: 1,
+    }
+  });
+
+  deviceList
+  .addLabel("device scroll")
+  .to("#device-list", { x: `-${deviceScrollWidth}px`, duration: 1, ease: 'power1.inOut' })
+  .to('#device-progress', { width: "100%", duration: 1, ease: 'power1.inOut' }, "device scroll")
 });
 
 function horizontalLoop(items, config) {
