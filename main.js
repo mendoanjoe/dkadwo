@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", (event) => {
   gsap.registerPlugin(ScrollTrigger)
+  gsap.registerPlugin(SplitText)
 
   // animation for client logo
   horizontalLoop("#box", {
@@ -13,7 +14,6 @@ document.addEventListener("DOMContentLoaded", (event) => {
     let hero = gsap.timeline({
       scrollTrigger: {
         trigger: '#hero',
-        marker: true,
         start: 'top top',
         scrub: 1,
       }
@@ -30,7 +30,6 @@ document.addEventListener("DOMContentLoaded", (event) => {
   let hero2 = gsap.timeline({
     scrollTrigger: {
       trigger: '#hero',
-      marker: true,
       start: '-=100% top',
     }
   });
@@ -44,7 +43,6 @@ document.addEventListener("DOMContentLoaded", (event) => {
   let clientFeedText = gsap.timeline({
     scrollTrigger: {
       trigger: '#client-feed',
-      marker: true,
       start: '-=100% top',
     }
   });
@@ -55,7 +53,6 @@ document.addEventListener("DOMContentLoaded", (event) => {
   let clientFeed = gsap.timeline({
     scrollTrigger: {
       trigger: '#client-feed',
-      marker: true,
       start: '-=120% top',
       end: '+=30% bottom',
       scrub: 1,
@@ -72,7 +69,6 @@ document.addEventListener("DOMContentLoaded", (event) => {
   let numberCount = gsap.timeline({
     scrollTrigger: {
       trigger: '#number-count',
-      marker: true,
       start: '-=200% top',
     }
   });
@@ -93,7 +89,6 @@ document.addEventListener("DOMContentLoaded", (event) => {
   let numberCountScroll = gsap.timeline({
     scrollTrigger: {
       trigger: '#number-count',
-      marker: true,
       start: '-=30% top',
       end: '+=50% bottom',
       scrub: 1,
@@ -112,7 +107,6 @@ document.addEventListener("DOMContentLoaded", (event) => {
   let price = gsap.timeline({
     scrollTrigger: {
       trigger: '#price',
-      marker: true,
       start: '-=200% top',
       end: '+=40% bottom',
     }
@@ -126,8 +120,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
   let devices = gsap.timeline({
     scrollTrigger: {
       trigger: '#devices',
-      marker: true,
-      start: '-=200% top',
+      start: 'top center',
     }
   });
 
@@ -143,7 +136,6 @@ document.addEventListener("DOMContentLoaded", (event) => {
   let deviceList = gsap.timeline({
     scrollTrigger: {
       trigger: '#devices',
-      marker: true,
       start: 'top top',
       end: 'bottom bottom',
       scrub: 1,
@@ -151,16 +143,15 @@ document.addEventListener("DOMContentLoaded", (event) => {
   });
 
   deviceList
-  .addLabel("device scroll")
-  .to("#device-list", { x: `-${deviceScrollWidth}px`, duration: 1, ease: 'power1.inOut' })
-  .to('#device-progress', { width: "100%", duration: 1, ease: 'power1.inOut' }, "device scroll")
+    .addLabel("device scroll")
+    .to("#device-list", { x: `-${deviceScrollWidth}px`, duration: 1, ease: 'power1.inOut' })
+    .to('#device-progress', { width: "100%", duration: 1, ease: 'power1.inOut' }, "device scroll")
 
   // animation benefit
   let benefitPanel = gsap.timeline({
     scrollTrigger: {
       trigger: '#benefit',
-      marker: true,
-      start: '-=200% top',
+      start: 'top center',
     }
   });
 
@@ -176,7 +167,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     const benefit = gsap.timeline({ paused: true })
       .to(benefitIcon, { color: "#6FD2C0", duration: .5, ease: 'power1.inOut' })
       .from(benefitContent.children[1], { height: 0, marginTop: 0, opacity: 0, duration: .5, ease: 'power1.inOut' }, ">")
-      .fromTo(item, { background: "linear-gradient(180deg, #FFF 0%, #FFF 60%, #FFF 100%" }, { background: "linear-gradient(180deg, #E6EFEF 0%, rgba(237, 237, 237, 0.30) 60%, rgba(255, 255, 255, 0.00) 100%)", duration: 1, ease: 'power1.inOut'}, ">")
+      .fromTo(item, { background: "linear-gradient(180deg, #FFF 0%, #FFF 60%, #FFF 100%" }, { background: "linear-gradient(180deg, #E6EFEF 0%, rgba(237, 237, 237, 0.30) 60%, rgba(255, 255, 255, 0.00) 100%)", duration: 1, ease: 'power1.inOut' }, ">")
 
     item.addEventListener("mouseenter", function () {
       benefit.timeScale(4).play();
@@ -188,23 +179,21 @@ document.addEventListener("DOMContentLoaded", (event) => {
   });
 
   // animation meet
-  let meetPanel = gsap.timeline({
-    scrollTrigger: {
-      trigger: '#meet',
-      marker: true,
-      start: '-=200% top',
-    }
-  });
+  // let meetPanel = gsap.timeline({
+  //   scrollTrigger: {
+  //     trigger: '#meet',
+  //     start: 'top center',
+  //   }
+  // });
 
-  meetPanel
-    .from('#meet-text', { opacity: 0, duration: 1, ease: 'power1.inOut' })
-    .from("#meet-list", { opacity: 0, duration: .5, ease: 'power1.inOut' }, "<")
+  // meetPanel
+  //   .from('#meet-text', { opacity: 0, duration: 1, ease: 'power1.inOut' })
+  //   .from("#meet-list", { opacity: 0, duration: .5, ease: 'power1.inOut' }, "<")
 
   // animation how-works
   let howWorkPanel = gsap.timeline({
     scrollTrigger: {
       trigger: '#how-works',
-      marker: true,
       start: 'top center',
     }
   });
@@ -217,21 +206,104 @@ document.addEventListener("DOMContentLoaded", (event) => {
   let howWorkList = gsap.timeline({
     scrollTrigger: {
       trigger: '#how-works',
-      marker: true,
       start: 'top top',
       scrub: 1,
     }
   });
 
+  let howWorkListItems = gsap.utils.toArray("#how-work-list > div");
+  let howWorkListSVG = gsap.utils.toArray("#how-work-list > svg");
+  howWorkListItems.forEach((block, index) => {
+    if (index != 0) {
+      const paddingPanel = (block.clientHeight + (51 * 3) + (24 * 3));
+      const howWorkListItemEffect = gsap.timeline({
+        scrollTrigger: {
+          trigger: block,
+          start: `top+=${paddingPanel}px top`,
+          end: "bottom bottom",
+          scrub: 1,
+          toggleActions: "play reverse",
+        },
+      });
+
+      howWorkListItemEffect
+        .fromTo(block, {
+          opacity: .4,
+          background: "linear-gradient(180deg, #FFF 0%, #E6EFEF 100%)"
+        }, {
+          opacity: 1,
+          background: "linear-gradient(180deg, #E6EFEF 0%, #E6EFEF 100%)",
+          duration: 1,
+          ease: 'power1.inOut'
+        }).fromTo(howWorkListSVG[index], { opacity:.4 }, { opacity: 1, duration: 1, ease: 'power1.inOut' }, ">")
+    }
+  });
+
   howWorkList
-  .addLabel("how-work-list")
-  .to("#how-work-list", { y: "-100%", duration: 1, ease: 'power1.inOut' })
+    .addLabel("how-work-list")
+    .to("#how-work-list", { y: "-100%", duration: 1, ease: 'power1.inOut' })
+
+  // animation faq appear
+  let faqPanel = gsap.timeline({
+    scrollTrigger: {
+      trigger: '#faq',
+      start: 'top center',
+    }
+  });
+
+  faqPanel
+    .from('#faq-text', { opacity: 0, duration: 1, ease: 'power1.inOut' })
+    .from("#faq-list", { opacity: 0, duration: .5, ease: 'power1.inOut' })
+
+  let faqTriggerPanel = gsap.utils.toArray("#faq-list > div");
+  let faqTriggerButton = gsap.utils.toArray("#faq-list > div > div");
+  let faqTriggerContent = gsap.utils.toArray("#faq-list > div > p");
+  let faqTriggerIcon = gsap.utils.toArray("#faq-list > div #faq-icon");
+  faqTriggerPanel.forEach((item, index) => {
+    
+    const animationFaq = gsap.timeline({ paused: true })
+    .fromTo(
+      faqTriggerContent[index],
+      { opacity: 0, height: 0, paddingLeft: 0, paddingRight: 0, paddingBottom: 0 },
+      { opacity: 1, height: faqTriggerContent[index].clientHeight, paddingLeft: 20, paddingRight: 20, paddingBottom: 20, duration: .3, ease: 'power1.inOut' }
+    )
+
+    faqTriggerButton[index].addEventListener("click", (e) => {
+      e.preventDefault();
+      if (e.target.dataset.open == 'false') {
+        animationFaq.play()
+        e.target.dataset.open = 'true'
+        faqTriggerIcon[index].style.transform = 'rotate(90deg)'
+      } else {
+        animationFaq.reverse()
+        e.target.dataset.open = 'false'
+        faqTriggerIcon[index].style.transform = 'rotate(0deg)'
+      }
+    })
+  })
+
+  // animation bridge
+  const bridgeWord = new SplitText('#bridge-text', { type: 'chars,words', })
+  let bridge = gsap.timeline({
+    scrollTrigger: {
+      trigger: '#bridge',
+      start: 'top top',
+      end: 'bottom bottom',
+      scrub: 1,
+    }
+  });
+
+  bridge.to(bridgeWord.chars, {
+    duration: 1,
+    stagger: 0.1,
+    color: "white",
+    ease: 'power1.inOut'
+  })
 
   // animation footer
   let footer = gsap.timeline({
     scrollTrigger: {
       trigger: '#footer',
-      marker: true,
       start: 'top center',
       end: '-=100% bottom',
       scrub: 1,
@@ -239,14 +311,14 @@ document.addEventListener("DOMContentLoaded", (event) => {
   });
 
   footer
-    .fromTo('#footer', { background: "linear-gradient(180deg, #FFF 12.56%, #fff 38.79%, #fff 100%)" } ,{ background: "linear-gradient(180deg, #FFF 12.56%, #EDEDED 38.79%, #6FD2C0 100%)", duration: 1, ease: 'power1.inOut' })
+    .fromTo('#footer', { background: "linear-gradient(180deg, #FFF 12.56%, #fff 38.79%, #fff 100%)" }, { background: "linear-gradient(180deg, #FFF 12.56%, #EDEDED 38.79%, #6FD2C0 100%)", duration: 1, ease: 'power1.inOut' })
 });
 
 function horizontalLoop(items, config) {
   let timeline;
   items = gsap.utils.toArray(items);
   config = config || {};
-  gsap.context(() => { // use a context so that if this is called from within another context or a gsap.matchMedia(), we can perform proper cleanup like the "resize" event handler on the window
+  gsap.context(() => {
     let onChange = config.onChange,
       lastIndex = 0,
       tl = gsap.timeline({
@@ -268,7 +340,7 @@ function horizontalLoop(items, config) {
       indexIsDirty = false,
       center = config.center,
       pixelsPerSecond = (config.speed || 1) * 100,
-      snap = config.snap === false ? v => v : gsap.utils.snap(config.snap || 1), // some browsers shift by a pixel to accommodate flex layouts, so for example if width is 20% the first element's width might be 242px, and the next 243px, alternating back and forth. So we snap to 5 percentage points to make things look more natural
+      snap = config.snap === false ? v => v : gsap.utils.snap(config.snap || 1),
       timeOffset = 0,
       container = center === true ? items[0].parentNode : gsap.utils.toArray(center)[0] || items[0].parentNode,
       totalWidth,
@@ -282,7 +354,7 @@ function horizontalLoop(items, config) {
           spaceBefore[i] = b2.left - (i ? b1.right : b1.left);
           b1 = b2;
         });
-        gsap.set(items, { // convert "x" to "xPercent" to make things responsive, and populate the widths/xPercents Arrays to make lookups faster.
+        gsap.set(items, {
           xPercent: i => xPercents[i]
         });
         totalWidth = getTotalWidth();
@@ -342,10 +414,10 @@ function horizontalLoop(items, config) {
     window.addEventListener("resize", onResize);
     function toIndex(index, vars) {
       vars = vars || {};
-      (Math.abs(index - curIndex) > length / 2) && (index += index > curIndex ? -length : length); // always go in the shortest direction
+      (Math.abs(index - curIndex) > length / 2) && (index += index > curIndex ? -length : length);
       let newIndex = gsap.utils.wrap(0, length, index),
         time = times[newIndex];
-      if (time > tl.time() !== index > curIndex && index !== curIndex) { // if we're wrapping the timeline's playhead, make the proper adjustments
+      if (time > tl.time() !== index > curIndex && index !== curIndex) {
         time += tl.duration() * (index > curIndex ? 1 : -1);
       }
       if (time < 0 || time > tl.duration()) {
@@ -369,7 +441,7 @@ function horizontalLoop(items, config) {
     tl.next = vars => toIndex(tl.current() + 1, vars);
     tl.previous = vars => toIndex(tl.current() - 1, vars);
     tl.times = times;
-    tl.progress(1, true).progress(0, true); // pre-render for performance
+    tl.progress(1, true).progress(0, true);
     if (config.reversed) {
       tl.vars.onReverseComplete();
       tl.reverse();
@@ -400,7 +472,6 @@ function horizontalLoop(items, config) {
         overshootTolerance: 0,
         inertia: true,
         snap(value) {
-          //note: if the user presses and releases in the middle of a throw, due to the sudden correction of proxy.x in the onPressInit(), the velocity could be very large, throwing off the snap. So sense that condition and adjust for it. We also need to set overshootTolerance to 0 to prevent the inertia from causing it to shoot past and come back
           if (Math.abs(startProgress / -ratio - this.x) < 10) {
             return lastSnap + initChangeX
           }

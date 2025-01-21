@@ -82,6 +82,7 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/SplitText3.min.js"></script>
   <script src="/main.js"></script>
 </head>
 
@@ -111,7 +112,7 @@
             class="absolute left-1/2 hidden -translate-x-1/2 justify-center gap-x-4 overflow-hidden lg:flex lg:gap-x-7">
             <a href="#" class="text-sm/[100%] -tracking-[.28px] text-white">Services</a>
             <a href="#" class="text-sm/[100%] -tracking-[.28px] text-white">How It Works</a>
-            <a href="#" class="text-sm/[100%] -tracking-[.28px] text-white">Device-Specifi Pages</a>
+            <a href="#" class="text-sm/[100%] -tracking-[.28px] text-white">Recoverable Devices</a>
             <a href="#" class="text-sm/[100%] -tracking-[.28px] text-white">Benefits</a>
             <a href="#" class="text-sm/[100%] -tracking-[.28px] text-white">Pricing</a>
           </div>
@@ -156,7 +157,7 @@
                     <button type="button"
                       class="flex w-full items-center justify-between text-base/[100%] -tracking-[.32px] text-white hover:text-white/80"
                       aria-controls="disclosure-1" aria-expanded="false">
-                      Device-Specifi Pages
+                      Recoverable Devices
                       <svg class="size-5 flex-none" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                         viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
                         <path
@@ -235,29 +236,21 @@
                   viewBox="0 0 24 24" fill="none">
                   <path
                     d="M9.292 4.34766L17.2843 8.96321V10.8419C17.2843 11.0959 17.1488 11.3306 16.9289 11.4576L15.3876 12.3477C15.1645 12.4766 14.8791 12.4001 14.7502 12.1769C14.7093 12.1059 14.6877 12.0254 14.6877 11.9435V10.4627L6.7168 5.84201"
-                    stroke="white" stroke-width="0.7" stroke-linecap="round" stroke-linejoin="round" />
-                  <path
-                    d="M17.7977 17.8227V16.8853C17.7977 16.7394 17.6794 16.6211 17.5336 16.6211C17.4872 16.6211 17.4417 16.6333 17.4015 16.6565L15.5083 17.7498C15.3182 17.8595 15.2011 18.0624 15.2012 18.2819V19.3222"
-                    stroke="white" stroke-width="0.7" stroke-linecap="round" stroke-linejoin="round" />
-                  <path
-                    d="M14.7617 15.1018V15.3726C14.7617 15.6303 14.9706 15.8393 15.2283 15.8393C15.3103 15.8393 15.3907 15.8177 15.4617 15.7767L17.583 14.6043C17.8029 14.4773 17.9384 14.2426 17.9384 13.9886V13.6398C17.9384 13.3911 17.7369 13.1895 17.4882 13.1895C17.4092 13.1895 17.3316 13.2103 17.2631 13.2498L15.1603 14.4114C14.9137 14.5538 14.7617 14.817 14.7617 15.1018Z"
-                    stroke="white" stroke-width="0.7" stroke-linecap="round" stroke-linejoin="round" />
+                    stroke="#BEFFF3" stroke-width="0.7" stroke-linecap="round" stroke-linejoin="round" />
                   <path d="M20.0095 7.375L12.0009 2.75L3.99219 7.375V16.625L12.0008 21.25L20.0095 16.625L20.0095 7.375Z"
-                    stroke="white" stroke-width="0.7" stroke-linecap="round" stroke-linejoin="round" />
-                  <path d="M10.6005 12.9079L8.01367 11.457V13.7776L10.6005 15.2285V12.9079Z" stroke="white"
-                    stroke-width="0.7" stroke-linecap="round" stroke-linejoin="round" />
-                  <path d="M12 12.0117V21.2514" stroke="white" stroke-width="0.7" stroke-linecap="round"
+                    stroke="#BEFFF3" stroke-width="0.7" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M12 12.0117V21.2514" stroke="#BEFFF3" stroke-width="0.7" stroke-linecap="round"
                     stroke-linejoin="round" />
-                  <path d="M12.0184 12.0117L4.00977 7.38672" stroke="white" stroke-width="0.7" stroke-linecap="round"
+                  <path d="M12.0184 12.0117L4.00977 7.38672" stroke="#BEFFF3" stroke-width="0.7" stroke-linecap="round"
                     stroke-linejoin="round" />
-                  <path d="M17.2812 8.96117L20.0076 7.38672" stroke="white" stroke-width="0.7" stroke-linecap="round"
+                  <path d="M17.2812 8.96117L20.0076 7.38672" stroke="#BEFFF3" stroke-width="0.7" stroke-linecap="round"
                     stroke-linejoin="round" />
-                  <path d="M12 12.0101L14.6858 10.459" stroke="white" stroke-width="0.7" stroke-linecap="round"
+                  <path d="M12 12.0101L14.6858 10.459" stroke="#BEFFF3" stroke-width="0.7" stroke-linecap="round"
                     stroke-linejoin="round" />
                 </svg>
                 <span
-                  class="text-pretty text-sm/[100%] -tracking-[.32px] text-white lg:text-base/[100%] lg:-tracking-[.64px]">Sending
-                  a Device</span>
+                  class="text-pretty text-sm/[100%] -tracking-[.32px] text-white lg:text-base/[100%] lg:-tracking-[.64px]">Send
+                  your Device</span>
               </div>
               <div>
                 <svg xmlns="http://www.w3.org/2000/svg" width="27" height="10" viewBox="0 0 27 10" fill="none">
@@ -272,11 +265,11 @@
                   viewBox="0 0 24 24" fill="none">
                   <path
                     d="M11.9998 2.25C10.0346 2.25 8.14983 3.03069 6.76018 4.42034C5.37054 5.80998 4.58984 7.69475 4.58984 9.66C4.58984 9.83 4.58984 10 4.58984 10.16V10.2C4.88984 14.26 8.25984 17.525 11.9998 21.75C15.9048 17.34 19.4098 14 19.4098 9.66C19.4098 7.69475 18.6292 5.80998 17.2395 4.42034C15.8499 3.03069 13.9651 2.25 11.9998 2.25ZM11.9998 6.1C12.7051 6.1 13.3946 6.30921 13.981 6.70116C14.5673 7.09311 15.0243 7.65018 15.294 8.30189C15.5636 8.9536 15.6339 9.67066 15.496 10.3623C15.358 11.054 15.018 11.6892 14.5189 12.1876C14.0198 12.686 13.3841 13.0251 12.6923 13.1621C12.0004 13.2991 11.2834 13.2278 10.6321 12.9572C9.98078 12.6866 9.42435 12.2289 9.03322 11.642C8.6421 11.0551 8.43386 10.3653 8.43484 9.66C8.43617 8.71537 8.81235 7.80988 9.48077 7.1424C10.1492 6.47491 11.0552 6.1 11.9998 6.1Z"
-                    stroke="white" stroke-width="0.7" stroke-linecap="round" stroke-linejoin="round" />
+                    stroke="#BEFFF3" stroke-width="0.7" stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
                 <span
                   class="text-pretty text-sm/[100%] -tracking-[.32px] text-white lg:text-base/[100%] lg:-tracking-[.64px]">Device
-                  arrives</span>
+                  Arrives</span>
               </div>
               <div>
                 <svg xmlns="http://www.w3.org/2000/svg" width="27" height="10" viewBox="0 0 27 10" fill="none">
@@ -289,23 +282,14 @@
               <div class="inline-flex items-center gap-1.5">
                 <svg class="size-5 md:size-6" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                   viewBox="0 0 24 24" fill="none">
-                  <g clip-path="url(#clip0_540_227723)">
-                    <path
-                      d="M12 1.25C11.3165 1.2574 10.6351 1.33 9.96535 1.4668C9.99825 1.61715 10.0149 1.77055 10.015 1.92445C10.0155 3.1087 9.05585 4.06915 7.8716 4.06965C7.1401 4.0623 6.4624 3.68255 6.07455 3.06225C4.87955 3.85535 3.85535 4.87955 3.06225 6.07455C3.68255 6.46235 4.0623 7.13965 4.06965 7.8712C4.06935 9.05545 3.1091 10.0153 1.92485 10.015C1.77205 10.0071 1.6201 9.98285 1.47245 9.9427C1.3323 10.6198 1.2578 11.3087 1.25 12.0001C1.2578 12.6914 1.3323 13.3804 1.47245 14.0574C1.6201 14.0173 1.77165 13.9931 1.92445 13.9852C3.1087 13.9847 4.06915 14.9443 4.06965 16.1285C4.0623 16.86 3.68255 17.5377 3.06225 17.9256C3.85535 19.1206 4.87955 20.1448 6.07455 20.9379C6.46235 20.3176 7.13965 19.9378 7.8712 19.9305C9.05545 19.9308 10.0153 20.891 10.015 22.0753C10.0071 22.2281 9.98285 22.38 9.9427 22.5277C10.6198 22.6678 11.3087 22.7423 12.0001 22.7501C12.6914 22.7423 13.3804 22.6678 14.0574 22.5277C14.0173 22.38 13.9931 22.2285 13.9852 22.0757C13.9847 20.8914 14.9443 19.931 16.1285 19.9305C16.86 19.9378 17.5377 20.3176 17.9256 20.9379C19.1206 20.1448 20.1448 19.1206 20.9379 17.9256C20.3176 17.5378 19.9378 16.8605 19.9305 16.1289C19.9308 14.9447 20.891 13.9849 22.0753 13.9852C22.2281 13.9931 22.38 14.0173 22.5277 14.0574C22.6678 13.3804 22.7423 12.6914 22.7501 12.0001C22.749 11.3084 22.6812 10.6185 22.5475 9.9399C22.3935 9.98245 22.2353 10.0076 22.0757 10.015C20.8914 10.0155 19.931 9.0559 19.9305 7.87165C19.9385 7.1319 20.3273 6.44815 20.9591 6.0633C20.1642 4.86375 19.1364 3.83605 17.9369 3.04105C17.552 3.67285 16.8687 4.06165 16.1289 4.0697C14.9447 4.0694 13.9849 3.10915 13.9852 1.9249C13.9926 1.7653 14.0177 1.60665 14.0603 1.45265C13.3817 1.319 12.6916 1.2511 12 1.25Z"
-                      stroke="white" stroke-width="0.7" stroke-linecap="round" stroke-linejoin="round" />
-                    <path
-                      d="M17.1256 7.95352L14.9765 10.1026C14.8344 10.2447 14.6056 10.2447 14.4636 10.1026L13.8925 9.53147C13.7504 9.38937 13.7504 9.16057 13.8925 9.01852L16.0345 6.87647C14.7411 6.08277 13.0725 6.27692 11.9959 7.34637C11.1044 8.24022 10.8031 9.56537 11.2204 10.7568L6.81606 15.1612C6.24771 15.7295 6.24011 16.6371 6.79901 17.196C7.35796 17.755 8.26551 17.7474 8.83386 17.179L13.2382 12.7746C14.4297 13.192 15.7548 12.8907 16.6487 11.9992C17.724 10.9231 17.9212 9.25012 17.1256 7.95352Z"
-                      stroke="white" stroke-width="0.7" stroke-linecap="round" stroke-linejoin="round" />
-                  </g>
-                  <defs>
-                    <clipPath id="clip0_540_227723">
-                      <rect width="24" height="24" fill="white" />
-                    </clipPath>
-                  </defs>
+                  <circle cx="12" cy="12" r="10.75" stroke="#BEFFF3" stroke-width="0.5" />
+                  <path
+                    d="M17.1256 7.95352L14.9765 10.1026C14.8344 10.2447 14.6056 10.2447 14.4636 10.1026L13.8925 9.53147C13.7504 9.38937 13.7504 9.16057 13.8925 9.01852L16.0345 6.87647C14.7411 6.08277 13.0725 6.27692 11.9959 7.34637C11.1044 8.24022 10.8031 9.56537 11.2204 10.7568L6.81606 15.1612C6.24771 15.7295 6.24011 16.6371 6.79901 17.196C7.35796 17.755 8.26551 17.7474 8.83386 17.179L13.2382 12.7746C14.4297 13.192 15.7548 12.8907 16.6487 11.9992C17.724 10.9231 17.9212 9.25012 17.1256 7.95352Z"
+                    stroke="#BEFFF3" stroke-width="0.7" stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
                 <span
-                  class="text-pretty text-sm/[100%] -tracking-[.32px] text-white lg:text-base/[100%] lg:-tracking-[.64px]">Recovery
-                  data</span>
+                  class="text-pretty text-sm/[100%] -tracking-[.32px] text-white lg:text-base/[100%] lg:-tracking-[.64px]">Data
+                  Recovered</span>
               </div>
               <div>
                 <svg xmlns="http://www.w3.org/2000/svg" width="27" height="10" viewBox="0 0 27 10" fill="none">
@@ -318,24 +302,17 @@
               <div class="inline-flex items-center gap-1.5">
                 <svg class="size-5 md:size-6" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                   viewBox="0 0 24 24" fill="none">
-                  <g clip-path="url(#clip0_540_227732)">
-                    <path
-                      d="M22.75 12C22.75 14.1261 22.1195 16.2046 20.9383 17.9724C19.7571 19.7402 18.0782 21.1181 16.1139 21.9317C14.1495 22.7453 11.9881 22.9582 9.90278 22.5434C7.81749 22.1287 5.90202 21.1048 4.39861 19.6014C2.89519 18.098 1.87135 16.1825 1.45656 14.0972C1.04177 12.0119 1.25466 9.85046 2.0683 7.88615C2.88194 5.92185 4.2598 4.24293 6.02762 3.0617C7.79545 1.88048 9.87386 1.25 12 1.25"
-                      stroke="white" stroke-width="0.7" stroke-linecap="round" stroke-linejoin="round" />
-                    <path d="M19.7561 4.24219L11.3438 15.6931" stroke="white" stroke-width="0.7" stroke-linecap="round"
-                      stroke-linejoin="round" />
-                    <path d="M5.91602 11.1504L11.3448 15.6948" stroke="white" stroke-width="0.7" stroke-linecap="round"
-                      stroke-linejoin="round" />
-                  </g>
-                  <defs>
-                    <clipPath id="clip0_540_227732">
-                      <rect width="24" height="24" fill="white" />
-                    </clipPath>
-                  </defs>
+                  <path
+                    d="M22 12C22 13.9778 21.4135 15.9112 20.3147 17.5557C19.2159 19.2002 17.6541 20.4819 15.8268 21.2388C13.9996 21.9957 11.9889 22.1937 10.0491 21.8078C8.10929 21.422 6.32746 20.4696 4.92894 19.0711C3.53041 17.6725 2.578 15.8907 2.19215 13.9509C1.8063 12.0111 2.00433 10.0004 2.76121 8.17316C3.51809 6.3459 4.79981 4.78412 6.4443 3.6853C8.08879 2.58649 10.0222 2 12 2"
+                    stroke="#BEFFF3" stroke-width="0.7" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M19.7561 4.24219L11.3438 15.6931" stroke="#BEFFF3" stroke-width="0.7" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                  <path d="M5.91602 11.1504L11.3448 15.6948" stroke="#BEFFF3" stroke-width="0.7" stroke-linecap="round"
+                    stroke-linejoin="round" />
                 </svg>
                 <span
-                  class="text-pretty text-sm/[100%] -tracking-[.32px] text-white lg:text-base/[100%] lg:-tracking-[.64px]">Recovery
-                  Completed</span>
+                  class="text-pretty text-sm/[100%] -tracking-[.32px] text-white lg:text-base/[100%] lg:-tracking-[.64px]">Data
+                  Returned</span>
               </div>
             </div>
           </div>
@@ -385,22 +362,24 @@
         <div class="flex justify-between max-md:flex-col max-md:gap-5">
           <div id="client-feed-1"
             class="inline-flex max-w-96 gap-1.5 rounded-md border border-[#00000033] py-2.5 pl-2.5 pr-3 max-md:max-w-full">
-            <div class="size-10 shrink-0 rounded-full border border-white bg-black"></div>
+            <img class="size-10 shrink-0 rounded-full border border-white bg-black object-cover"
+              src="/assets/client-4.png" alt="Elijah Carter">
             <div class="space-y-1.5">
               <h4 class="text-base/[100%] -tracking-[.32px] lg:text-lg/[100%] lg:-tracking-[.36px] text-black">Elijah
                 Carter</h4>
-              <p class="text-xs/[152%] -tracking-[.32px] lg:text-base/[120%] lg:-tracking-[.32px] text-[#00000099]">“OMG
+              <p class="text-xs/[152%] -tracking-[.32px] lg:text-base/[120%] lg:-tracking-[.32px] text-black/60">“OMG
                 😱, I lost my data because my laptop is broken! What should I do”</p>
             </div>
           </div>
           <div id="client-feed-2"
             class="inline-flex max-w-96 gap-1.5 rounded-md border border-[#00000033] py-2.5 pl-2.5 pr-3 max-md:max-w-full">
-            <div class="size-10 shrink-0 rounded-full border border-white bg-black"></div>
+            <img class="size-10 shrink-0 rounded-full border border-white bg-black object-cover"
+              src="/assets/client-1.png" alt="Lucas Bennett">
             <div class="space-y-1.5">
-              <h4 class="text-base/[100%] -tracking-[.32px] lg:text-lg/[100%] lg:-tracking-[.36px] text-black">Elijah
-                Carter</h4>
-              <p class="text-xs/[152%] -tracking-[.32px] lg:text-base/[120%] lg:-tracking-[.32px] text-[#00000099]">“OMG
-                😱, I lost my data because my laptop is broken! What should I do”</p>
+              <h4 class="text-base/[100%] -tracking-[.32px] lg:text-lg/[100%] lg:-tracking-[.36px] text-black">Lucas
+                Bennett</h4>
+              <p class="text-xs/[152%] -tracking-[.32px] lg:text-base/[120%] lg:-tracking-[.32px] text-black/60">My hard
+                drive stopped working 😖, and I lost all my files. Is recovery possible?</p>
             </div>
           </div>
         </div>
@@ -415,22 +394,24 @@
         <div class="flex justify-between max-md:flex-col max-md:gap-5">
           <div id="client-feed-3"
             class="inline-flex max-w-96 gap-1.5 rounded-md border border-[#00000033] py-2.5 pl-2.5 pr-3 max-md:max-w-full">
-            <div class="size-10 shrink-0 rounded-full border border-white bg-black"></div>
+            <img class="size-10 shrink-0 rounded-full border border-white bg-black object-cover"
+              src="/assets/client-3.png" alt="Olivia Harper">
             <div class="space-y-1.5">
-              <h4 class="text-base/[100%] -tracking-[.32px] lg:text-lg/[100%] lg:-tracking-[.36px] text-black">Elijah
-                Carter</h4>
-              <p class="text-xs/[152%] -tracking-[.32px] lg:text-base/[120%] lg:-tracking-[.32px] text-[#00000099]">“OMG
-                😱, I lost my data because my laptop is broken! What should I do”</p>
+              <h4 class="text-base/[100%] -tracking-[.32px] lg:text-lg/[100%] lg:-tracking-[.36px] text-black">Olivia
+                Harper</h4>
+              <p class="text-xs/[152%] -tracking-[.32px] lg:text-base/[120%] lg:-tracking-[.32px] text-black/60">“My
+                phone fell and broke, and now it won’t turn on. It has important data that I need.”</p>
             </div>
           </div>
           <div id="client-feed-4"
             class="inline-flex max-w-96 gap-1.5 rounded-md border border-[#00000033] py-2.5 pl-2.5 pr-3 max-md:max-w-full">
-            <div class="size-10 shrink-0 rounded-full border border-white bg-black"></div>
+            <img class="size-10 shrink-0 rounded-full border border-white bg-black object-cover"
+              src="/assets/client-2.png" alt="Sophia Brooks">
             <div class="space-y-1.5">
-              <h4 class="text-base/[100%] -tracking-[.32px] lg:text-lg/[100%] lg:-tracking-[.36px] text-black">Elijah
-                Carter</h4>
-              <p class="text-xs/[152%] -tracking-[.32px] lg:text-base/[120%] lg:-tracking-[.32px] text-[#00000099]">“OMG
-                😱, I lost my data because my laptop is broken! What should I do”</p>
+              <h4 class="text-base/[100%] -tracking-[.32px] lg:text-lg/[100%] lg:-tracking-[.36px] text-black">Sophia
+                Brooks</h4>
+              <p class="text-xs/[152%] -tracking-[.32px] lg:text-base/[120%] lg:-tracking-[.32px] text-black/60">“I
+                reset my phone by mistake, and now all my data is gone, What should I do now?🤯”</p>
             </div>
           </div>
         </div>
@@ -455,7 +436,7 @@
                 class="font-['Inter'] text-sm/[100%] -tracking-[.28px] opacity-60 lg:text-base/[100%] lg:-tracking-[.32px]">days</span>
             </p>
             <a class="block rounded bg-[#1A3030] px-3 py-5 text-center text-sm/[100%] font-medium -tracking-[.28px] text-white"
-              href="#">Recovery Process Speed</a>
+              href="#">Turnaround Time</a>
           </div>
           <div class="flex flex-col gap-6 rounded bg-[#EDEDED] p-2.5 h-fit relative transition-all">
             <p
@@ -465,7 +446,7 @@
                 class="font-['Inter'] text-sm/[100%] -tracking-[.28px] opacity-60 lg:text-base/[100%] lg:-tracking-[.32px]">%</span>
             </p>
             <a class="block rounded bg-[#1A3030] px-3 py-5 text-center text-sm/[100%] font-medium -tracking-[.28px] text-white"
-              href="#">Data can be Restored</a>
+              href="#">Data Recovery Rate</a>
           </div>
           <div class="flex flex-col gap-6 rounded bg-[#EDEDED] p-2.5 h-fit relative transition-all">
             <p
@@ -479,12 +460,12 @@
           <div class="flex flex-col gap-6 rounded bg-[#EDEDED] p-2.5 h-fit relative transition-all">
             <p
               class="label-none mt-4 text-center font-['Silka'] text-2xl/[100%] -tracking-[.96px] text-black md:text-3xl/[100%] md:-tracking-[1.2px] lg:text-[2rem]/[100%] lg:-tracking-[1.28px]">
-              200.000
+              200,000
               <span
                 class="font-['Inter'] text-sm/[100%] -tracking-[.28px] opacity-60 lg:text-base/[100%] lg:-tracking-[.32px]">successful</span>
             </p>
             <a class="block rounded bg-[#1A3030] px-3 py-5 text-center text-sm/[100%] font-medium -tracking-[.28px] text-white"
-              href="#">Clients Data Recoveries</a>
+              href="#">Data Recoveries</a>
           </div>
         </div>
       </div>
@@ -502,7 +483,6 @@
           Faster Services Are Available!</p>
       </div>
     </div>
-
     <div id="devices" class="bg-white h-[200dvh]">
       <div class="h-dvh sticky top-0 overflow-hidden">
         <div
@@ -522,8 +502,10 @@
                   <h3
                     class="font-['Silka'] text-lg/[100%] -tracking-[.72px] text-black md:text-xl/[100%] md:-tracking-[.84px] lg:text-2xl/[100%] lg:-tracking-[.96px]">
                     Smartphone</h3>
-                  <p class="text-xs/[152%] -tracking-[.28px] text-black/60 md:text-sm/[152%] md:-tracking-[.28px]">
-                    Restore contacts, messages, and files from deleted systems.</p>
+                  <p
+                    class="text-xs/[152%] -tracking-[.28px] text-black/60 md:text-sm/[152%] md:-tracking-[.28px] max-w-[21.6rem]">
+                    Restore photos, videos, contacts, messages, and files from deleted systems.
+                  </p>
                 </div>
                 <img class="h-[420px] object-cover object-bottom" src="/assets/smartphone.png" alt="Smartphone" />
               </div>
@@ -532,8 +514,10 @@
                   <h3
                     class="font-['Silka'] text-lg/[100%] -tracking-[.72px] text-black md:text-xl/[100%] md:-tracking-[.84px] lg:text-2xl/[100%] lg:-tracking-[.96px]">
                     Macbook</h3>
-                  <p class="text-xs/[152%] -tracking-[.28px] text-black/60 md:text-sm/[152%] md:-tracking-[.28px]">
-                    Restore contacts, messages, and files from deleted systems.</p>
+                  <p
+                    class="text-xs/[152%] -tracking-[.28px] text-black/60 md:text-sm/[152%] md:-tracking-[.28px] max-w-[21.6rem]">
+                    Restore photos, videos, contacts, messages, and files from deleted systems.
+                  </p>
                 </div>
                 <img class="h-[420px] object-cover object-bottom" src="/assets/macbook.png" alt="Macbook" />
               </div>
@@ -542,8 +526,10 @@
                   <h3
                     class="font-['Silka'] text-lg/[100%] -tracking-[.72px] text-black md:text-xl/[100%] md:-tracking-[.84px] lg:text-2xl/[100%] lg:-tracking-[.96px]">
                     Hard Disk Drive (HDD)</h3>
-                  <p class="text-xs/[152%] -tracking-[.28px] text-black/60 md:text-sm/[152%] md:-tracking-[.28px]">
-                    Restore contacts, messages, and files from deleted systems.</p>
+                  <p
+                    class="text-xs/[152%] -tracking-[.28px] text-black/60 md:text-sm/[152%] md:-tracking-[.28px] max-w-[21.6rem]">
+                    Restore photos, videos, contacts, messages, and files from deleted systems.
+                  </p>
                 </div>
                 <img class="h-[420px] object-cover object-bottom" src="/assets/harddisk.png" alt="Hard Disk" />
               </div>
@@ -552,8 +538,10 @@
                   <h3
                     class="font-['Silka'] text-lg/[100%] -tracking-[.72px] text-black md:text-xl/[100%] md:-tracking-[.84px] lg:text-2xl/[100%] lg:-tracking-[.96px]">
                     Smartphone</h3>
-                  <p class="text-xs/[152%] -tracking-[.28px] text-black/60 md:text-sm/[152%] md:-tracking-[.28px]">
-                    Restore contacts, messages, and files from deleted systems.</p>
+                  <p
+                    class="text-xs/[152%] -tracking-[.28px] text-black/60 md:text-sm/[152%] md:-tracking-[.28px] max-w-[21.6rem]">
+                    Restore photos, videos, contacts, messages, and files from deleted systems.
+                  </p>
                 </div>
                 <img class="h-[420px] object-cover object-bottom" src="/assets/smartphone.png" alt="Smartphone" />
               </div>
@@ -566,7 +554,6 @@
         </div>
       </div>
     </div>
-
     <div id="benefit" class="overflow-hidden bg-white">
       <div
         class="relative isolate mx-auto max-w-[1440px] space-y-10 px-4 py-[1.875rem] md:px-14 md:py-12 lg:space-y-[3.75rem] lg:px-[6.25rem] lg:py-20">
@@ -581,7 +568,7 @@
           </div>
           <div id="benefit-list" class="grid grid-cols-1 md:grid-cols-3">
             <div
-              class="flex h-[340px] flex-col justify-between border border-black/15 p-5 md:h-[460px] md:p-6 lg:h-[520px]">
+              class="flex h-[352px] flex-col justify-between border border-black/15 p-5 md:h-[382px] md:p-6 lg:h-[412px]">
               <svg class="size-[3.875rem] text-white md:size-[4.25rem] lg:size-[4.5rem]"
                 xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewBox="0 0 72 72" fill="none">
                 <path
@@ -604,7 +591,7 @@
               </div>
             </div>
             <div
-              class="flex h-[340px] flex-col justify-between border border-black/15 p-5 md:h-[460px] md:p-6 lg:h-[520px]">
+              class="flex h-[352px] flex-col justify-between border border-black/15 p-5 md:h-[382px] md:p-6 lg:h-[412px]">
               <svg class="size-[3.875rem] text-white md:size-[4.25rem] lg:size-[4.5rem]"
                 xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewBox="0 0 72 72" fill="none">
                 <path
@@ -633,7 +620,7 @@
               </div>
             </div>
             <div
-              class="flex h-[340px] flex-col justify-between border border-black/15 p-5 md:h-[460px] md:p-6 lg:h-[520px]">
+              class="flex h-[352px] flex-col justify-between border border-black/15 p-5 md:h-[382px] md:p-6 lg:h-[412px]">
               <svg class="size-[3.875rem] text-white md:size-[4.25rem] lg:size-[4.5rem]"
                 xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewBox="0 0 72 72" fill="none">
                 <path
@@ -704,8 +691,7 @@
         </div> -->
       </div>
     </div>
-
-    <div id="meet" class="bg-white">
+    <!-- <div id="meet" class="bg-white">
       <div class="relative isolate mx-auto max-w-[1440px] overflow-hidden space-y-10">
         <div id="meet-text" class="space-y-2 text-center">
           <h3 class="font-['Silka'] text-lg/[120%] -tracking-[.72px]">Meet Our Engineers</h3>
@@ -715,7 +701,7 @@
         <div class="absolute inset-0 z-10 bg-gradient-to-r from-white via-transparent to-white"></div>
         <div id="meet-list" class="flex gap-3">
           <div id="box"
-            class="inline-flex shrink-0 items-center gap-1.5 rounded-[5rem] border border-black/20 py-2.5 pl-2.5 pr-3">
+            class="ml-3 inline-flex shrink-0 items-center gap-1.5 rounded-[5rem] border border-black/20 py-2.5 pl-2.5 pr-3">
             <div class="size-10 shrink-0 rounded-full bg-yellow-500"></div>
             <p class="text-lg/[100%] -tracking-[.36px] text-black">Sophie Dubois</p>
           </div>
@@ -761,222 +747,276 @@
           </div>
         </div>
       </div>
-    </div>
-
+    </div> -->
     <div id="how-works" class="h-[400dvh] bg-white">
       <div class="sticky top-0 overflow-hidden">
-        <div class="relative isolate mx-auto flex h-dvh max-w-[1440px] flex-col justify-between gap-8 px-4 py-[1.875rem] md:px-14 md:py-12 lg:flex-row lg:px-[6.25rem] lg:py-20">
+        <div
+          class="relative isolate mx-auto flex h-dvh max-w-[1440px] flex-col justify-between gap-8 px-4 py-[1.875rem] md:px-14 md:py-12 lg:flex-row lg:px-[6.25rem] lg:py-20">
           <div id="how-work-text" class="space-y-2 max-lg:text-center lg:max-w-[400px]">
-            <h2 class="font-['Silka'] text-[1.75rem]/[112%] -tracking-[1.12px] md:text-4xl/[120%] md:-tracking-[1.48px] lg:text-[3.25rem]/[120%] lg:-tracking-[2.08px]">How It Works</h2>
-            <p class="text-sm/[152%] -tracking-[.28px] text-black/60 lg:text-base/[152%] lg:-tracking-[.32px]">No matter how you lost access to your data, AI Data Recovery can rescue from permanent data loss.</p>
+            <h2
+              class="font-['Silka'] text-[1.75rem]/[112%] -tracking-[1.12px] md:text-4xl/[120%] md:-tracking-[1.48px] lg:text-[3.25rem]/[120%] lg:-tracking-[2.08px]">
+              How It Works</h2>
+            <p class="text-sm/[152%] -tracking-[.28px] text-black/60 lg:text-base/[152%] lg:-tracking-[.32px]">No matter
+              how you lost access to your data, AI Data Recovery can rescue from permanent data loss.</p>
           </div>
           <div class="relative">
             <div id="how-work-list" class="flex flex-col items-center gap-6">
               <div class="flex w-full flex-col items-start gap-6 rounded-lg bg-[#E6EFEF] p-5 md:p-8 lg:w-[610px]">
-                <svg class="size-9 md:size-11 lg:size-12" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
-                  <path d="M25 49C38.2548 49 49 38.2548 49 25C49 11.7452 38.2548 1 25 1C11.7452 1 1 11.7452 1 25C1 38.2548 11.7452 49 25 49Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" />
-                  <path d="M28.7345 26.0312C34.9901 27.21 37.5821 30.3736 37.5821 30.3736C38.656 32.2344 37.5821 34.794 37.5821 34.794C33.9542 39.3105 28.4498 39.7849 24.9715 39.7849C21.4943 39.7849 15.9899 39.3105 12.362 34.794C12.362 34.794 11.2882 32.2344 12.362 30.3736C12.362 30.3736 14.954 27.2112 21.2097 26.0312" stroke="black" stroke-linecap="round" stroke-linejoin="round" />
-                  <path d="M24.9707 27.2108C29.0643 27.2108 32.3828 23.4 32.3828 18.6991C32.3828 13.9983 29.0643 10.1875 24.9707 10.1875C20.8771 10.1875 17.5586 13.9983 17.5586 18.6991C17.5586 23.4 20.8771 27.2108 24.9707 27.2108Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" />
+                <svg class="size-9 md:size-11 lg:size-12" xmlns="http://www.w3.org/2000/svg" width="50" height="50"
+                  viewBox="0 0 50 50" fill="none">
+                  <path
+                    d="M25 49C38.2548 49 49 38.2548 49 25C49 11.7452 38.2548 1 25 1C11.7452 1 1 11.7452 1 25C1 38.2548 11.7452 49 25 49Z"
+                    stroke="black" stroke-linecap="round" stroke-linejoin="round" />
+                  <path
+                    d="M28.7345 26.0312C34.9901 27.21 37.5821 30.3736 37.5821 30.3736C38.656 32.2344 37.5821 34.794 37.5821 34.794C33.9542 39.3105 28.4498 39.7849 24.9715 39.7849C21.4943 39.7849 15.9899 39.3105 12.362 34.794C12.362 34.794 11.2882 32.2344 12.362 30.3736C12.362 30.3736 14.954 27.2112 21.2097 26.0312"
+                    stroke="black" stroke-linecap="round" stroke-linejoin="round" />
+                  <path
+                    d="M24.9707 27.2108C29.0643 27.2108 32.3828 23.4 32.3828 18.6991C32.3828 13.9983 29.0643 10.1875 24.9707 10.1875C20.8771 10.1875 17.5586 13.9983 17.5586 18.6991C17.5586 23.4 20.8771 27.2108 24.9707 27.2108Z"
+                    stroke="black" stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
                 <div class="space-y-2">
-                  <h3 class="font-['Silka'] text-[2rem]/[100%] -tracking-[1.28px] text-black md:text-5xl/[100%] md:-tracking-[2px] lg:text-6xl/[100%] lg:-tracking-[2.4px]">Contact Us</h3>
-                  <p class="text-sm/[152%] -tracking-[.28px] text-black/60 md:text-base/[152%] md:-tracking-[.32px]">Learn the data recovery solution, cost, process, and security measures for complete data recovery.</p>
+                  <h3
+                    class="font-['Silka'] text-[2rem]/[100%] -tracking-[1.28px] text-black md:text-5xl/[100%] md:-tracking-[2px] lg:text-6xl/[100%] lg:-tracking-[2.4px]">
+                    Contact Us</h3>
+                  <p class="text-sm/[152%] -tracking-[.28px] text-black/60 md:text-base/[152%] md:-tracking-[.32px]">
+                    Learn the data recovery solution, cost, process, and security measures for complete data recovery.
+                  </p>
                 </div>
-                <a href="#" class="rounded border border-[#6FD2C0] bg-[#6FD2C0] px-4 py-3 text-base/[100%] font-medium -tracking-[.32px] text-black hover:bg-[#6fd2c0c7] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#437e73]">Contact Us Today</a>
+                <a href="#"
+                  class="rounded border border-[#6FD2C0] bg-[#6FD2C0] px-4 py-3 text-base/[100%] font-medium -tracking-[.32px] text-black hover:bg-[#6fd2c0c7] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#437e73]">Contact
+                  Us Today</a>
               </div>
-              <svg class="mx-auto w-2.5 shrink-0" xmlns="http://www.w3.org/2000/svg" width="10" height="51" viewBox="0 0 10 51" fill="none">
+              <svg class="mx-auto w-2.5 shrink-0" xmlns="http://www.w3.org/2000/svg" width="10" height="51"
+                viewBox="0 0 10 51" fill="none">
                 <line x1="5" y1="2" x2="5" y2="50" stroke="black" stroke-dasharray="2 2" />
                 <path d="M5 51L0 45.7368L0.7 45L5 49.5263L9.3 45L10 45.7368L5 51Z" fill="black" />
                 <circle cx="5" cy="4" r="4" fill="#6FD2C0" />
               </svg>
               <div class="flex w-full flex-col items-start gap-6 rounded-lg bg-[#E6EFEF] p-5 md:p-8 lg:w-[610px]">
-                <svg class="size-9 md:size-11 lg:size-12" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
-                  <path d="M5.80078 20.3299V23.9623M44.2008 21.8867V25.6488M33.1738 24.4813V33.9515M27.7251 27.7245V39.5299M22.2765 23.184V34.211M16.8278 20.3299V29.411M11.2494 16.0488V24.8704M38.7521 21.8867V29.6705" stroke="black" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
-                  <path d="M27.7234 40.5679C28.2966 40.5679 28.7612 40.1032 28.7612 39.53C28.7612 38.9568 28.2966 38.4922 27.7234 38.4922C27.1502 38.4922 26.6855 38.9568 26.6855 39.53C26.6855 40.1032 27.1502 40.5679 27.7234 40.5679Z" fill="black" />
-                  <path d="M6.18919 1C3.33513 1 1 3.33513 1 6.18919V43.8108C1 46.6649 3.33513 49 6.18919 49H43.8108C46.6649 49 49 46.6649 49 43.8108V6.18919C49 3.33513 46.6649 1 43.8108 1H6.18919Z" stroke="black" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+                <svg class="size-9 md:size-11 lg:size-12" xmlns="http://www.w3.org/2000/svg" width="50" height="50"
+                  viewBox="0 0 50 50" fill="none">
+                  <path
+                    d="M5.80078 20.3299V23.9623M44.2008 21.8867V25.6488M33.1738 24.4813V33.9515M27.7251 27.7245V39.5299M22.2765 23.184V34.211M16.8278 20.3299V29.411M11.2494 16.0488V24.8704M38.7521 21.8867V29.6705"
+                    stroke="black" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+                  <path
+                    d="M27.7234 40.5679C28.2966 40.5679 28.7612 40.1032 28.7612 39.53C28.7612 38.9568 28.2966 38.4922 27.7234 38.4922C27.1502 38.4922 26.6855 38.9568 26.6855 39.53C26.6855 40.1032 27.1502 40.5679 27.7234 40.5679Z"
+                    fill="black" />
+                  <path
+                    d="M6.18919 1C3.33513 1 1 3.33513 1 6.18919V43.8108C1 46.6649 3.33513 49 6.18919 49H43.8108C46.6649 49 49 46.6649 49 43.8108V6.18919C49 3.33513 46.6649 1 43.8108 1H6.18919Z"
+                    stroke="black" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
                 <div class="space-y-2">
-                  <h3 class="font-['Silka'] text-[2rem]/[100%] -tracking-[1.28px] text-black md:text-5xl/[100%] md:-tracking-[2px] lg:text-6xl/[100%] lg:-tracking-[2.4px]">Get Job Number</h3>
-                  <p class="text-sm/[152%] -tracking-[.28px] text-black/60 md:text-base/[152%] md:-tracking-[.32px]">Learn the data recovery solution, cost, process, and security measures for complete data recovery.</p>
+                  <h3
+                    class="font-['Silka'] text-[2rem]/[100%] -tracking-[1.28px] text-black md:text-5xl/[100%] md:-tracking-[2px] lg:text-6xl/[100%] lg:-tracking-[2.4px]">
+                    Get Job Number</h3>
+                  <p class="text-sm/[152%] -tracking-[.28px] text-black/60 md:text-base/[152%] md:-tracking-[.32px]">
+                    Learn the data recovery solution, cost, process, and security measures for complete data recovery.
+                  </p>
                 </div>
-                <a href="#" class="rounded border border-[#6FD2C0] bg-[#6FD2C0] px-4 py-3 text-base/[100%] font-medium -tracking-[.32px] text-black hover:bg-[#6fd2c0c7] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#437e73]">Contact Us Today</a>
               </div>
-              <svg class="mx-auto w-2.5 shrink-0" xmlns="http://www.w3.org/2000/svg" width="10" height="51" viewBox="0 0 10 51" fill="none">
+              <svg class="mx-auto w-2.5 shrink-0" xmlns="http://www.w3.org/2000/svg" width="10" height="51"
+                viewBox="0 0 10 51" fill="none">
                 <line x1="5" y1="2" x2="5" y2="50" stroke="black" stroke-dasharray="2 2" />
                 <path d="M5 51L0 45.7368L0.7 45L5 49.5263L9.3 45L10 45.7368L5 51Z" fill="black" />
                 <circle cx="5" cy="4" r="4" fill="#6FD2C0" />
               </svg>
               <div class="flex w-full flex-col items-start gap-6 rounded-lg bg-[#E6EFEF] p-5 md:p-8 lg:w-[610px]">
-                <svg class="size-9 md:size-11 lg:size-12" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
-                  <path d="M5.80078 20.3299V23.9623M44.2008 21.8867V25.6488M33.1738 24.4813V33.9515M27.7251 27.7245V39.5299M22.2765 23.184V34.211M16.8278 20.3299V29.411M11.2494 16.0488V24.8704M38.7521 21.8867V29.6705" stroke="black" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
-                  <path d="M27.7234 40.5679C28.2966 40.5679 28.7612 40.1032 28.7612 39.53C28.7612 38.9568 28.2966 38.4922 27.7234 38.4922C27.1502 38.4922 26.6855 38.9568 26.6855 39.53C26.6855 40.1032 27.1502 40.5679 27.7234 40.5679Z" fill="black" />
-                  <path d="M6.18919 1C3.33513 1 1 3.33513 1 6.18919V43.8108C1 46.6649 3.33513 49 6.18919 49H43.8108C46.6649 49 49 46.6649 49 43.8108V6.18919C49 3.33513 46.6649 1 43.8108 1H6.18919Z" stroke="black" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+                <svg class="size-9 md:size-11 lg:size-12" xmlns="http://www.w3.org/2000/svg" width="50" height="50"
+                  viewBox="0 0 50 50" fill="none">
+                  <path
+                    d="M5.80078 20.3299V23.9623M44.2008 21.8867V25.6488M33.1738 24.4813V33.9515M27.7251 27.7245V39.5299M22.2765 23.184V34.211M16.8278 20.3299V29.411M11.2494 16.0488V24.8704M38.7521 21.8867V29.6705"
+                    stroke="black" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+                  <path
+                    d="M27.7234 40.5679C28.2966 40.5679 28.7612 40.1032 28.7612 39.53C28.7612 38.9568 28.2966 38.4922 27.7234 38.4922C27.1502 38.4922 26.6855 38.9568 26.6855 39.53C26.6855 40.1032 27.1502 40.5679 27.7234 40.5679Z"
+                    fill="black" />
+                  <path
+                    d="M6.18919 1C3.33513 1 1 3.33513 1 6.18919V43.8108C1 46.6649 3.33513 49 6.18919 49H43.8108C46.6649 49 49 46.6649 49 43.8108V6.18919C49 3.33513 46.6649 1 43.8108 1H6.18919Z"
+                    stroke="black" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
                 <div class="space-y-2">
-                  <h3 class="font-['Silka'] text-[2rem]/[100%] -tracking-[1.28px] text-black md:text-5xl/[100%] md:-tracking-[2px] lg:text-6xl/[100%] lg:-tracking-[2.4px]">Ship Your Device</h3>
-                  <p class="text-sm/[152%] -tracking-[.28px] text-black/60 md:text-base/[152%] md:-tracking-[.32px]">Learn the data recovery solution, cost, process, and security measures for complete data recovery.</p>
+                  <h3
+                    class="font-['Silka'] text-[2rem]/[100%] -tracking-[1.28px] text-black md:text-5xl/[100%] md:-tracking-[2px] lg:text-6xl/[100%] lg:-tracking-[2.4px]">
+                    Ship Your Device</h3>
+                  <p class="text-sm/[152%] -tracking-[.28px] text-black/60 md:text-base/[152%] md:-tracking-[.32px]">
+                    Learn the data recovery solution, cost, process, and security measures for complete data recovery.
+                  </p>
                 </div>
-                <a href="#" class="rounded border border-[#6FD2C0] bg-[#6FD2C0] px-4 py-3 text-base/[100%] font-medium -tracking-[.32px] text-black hover:bg-[#6fd2c0c7] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#437e73]">Contact Us Today</a>
               </div>
-              <svg class="mx-auto w-2.5 shrink-0" xmlns="http://www.w3.org/2000/svg" width="10" height="51" viewBox="0 0 10 51" fill="none">
+              <svg class="mx-auto w-2.5 shrink-0" xmlns="http://www.w3.org/2000/svg" width="10" height="51"
+                viewBox="0 0 10 51" fill="none">
                 <line x1="5" y1="2" x2="5" y2="50" stroke="black" stroke-dasharray="2 2" />
                 <path d="M5 51L0 45.7368L0.7 45L5 49.5263L9.3 45L10 45.7368L5 51Z" fill="black" />
                 <circle cx="5" cy="4" r="4" fill="#6FD2C0" />
               </svg>
               <div class="flex w-full flex-col items-start gap-6 rounded-lg bg-[#E6EFEF] p-5 md:p-8 lg:w-[610px]">
-                <svg class="size-9 md:size-11 lg:size-12" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
-                  <path d="M5.80078 20.3299V23.9623M44.2008 21.8867V25.6488M33.1738 24.4813V33.9515M27.7251 27.7245V39.5299M22.2765 23.184V34.211M16.8278 20.3299V29.411M11.2494 16.0488V24.8704M38.7521 21.8867V29.6705" stroke="black" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
-                  <path d="M27.7234 40.5679C28.2966 40.5679 28.7612 40.1032 28.7612 39.53C28.7612 38.9568 28.2966 38.4922 27.7234 38.4922C27.1502 38.4922 26.6855 38.9568 26.6855 39.53C26.6855 40.1032 27.1502 40.5679 27.7234 40.5679Z" fill="black" />
-                  <path d="M6.18919 1C3.33513 1 1 3.33513 1 6.18919V43.8108C1 46.6649 3.33513 49 6.18919 49H43.8108C46.6649 49 49 46.6649 49 43.8108V6.18919C49 3.33513 46.6649 1 43.8108 1H6.18919Z" stroke="black" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+                <svg class="size-9 md:size-11 lg:size-12" xmlns="http://www.w3.org/2000/svg" width="50" height="50"
+                  viewBox="0 0 50 50" fill="none">
+                  <path
+                    d="M5.80078 20.3299V23.9623M44.2008 21.8867V25.6488M33.1738 24.4813V33.9515M27.7251 27.7245V39.5299M22.2765 23.184V34.211M16.8278 20.3299V29.411M11.2494 16.0488V24.8704M38.7521 21.8867V29.6705"
+                    stroke="black" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+                  <path
+                    d="M27.7234 40.5679C28.2966 40.5679 28.7612 40.1032 28.7612 39.53C28.7612 38.9568 28.2966 38.4922 27.7234 38.4922C27.1502 38.4922 26.6855 38.9568 26.6855 39.53C26.6855 40.1032 27.1502 40.5679 27.7234 40.5679Z"
+                    fill="black" />
+                  <path
+                    d="M6.18919 1C3.33513 1 1 3.33513 1 6.18919V43.8108C1 46.6649 3.33513 49 6.18919 49H43.8108C46.6649 49 49 46.6649 49 43.8108V6.18919C49 3.33513 46.6649 1 43.8108 1H6.18919Z"
+                    stroke="black" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
                 <div class="space-y-2">
-                  <h3 class="font-['Silka'] text-[2rem]/[100%] -tracking-[1.28px] text-black md:text-5xl/[100%] md:-tracking-[2px] lg:text-6xl/[100%] lg:-tracking-[2.4px]">Assesment</h3>
-                  <p class="text-sm/[152%] -tracking-[.28px] text-black/60 md:text-base/[152%] md:-tracking-[.32px]">Learn the data recovery solution, cost, process, and security measures for complete data recovery.</p>
+                  <h3
+                    class="font-['Silka'] text-[2rem]/[100%] -tracking-[1.28px] text-black md:text-5xl/[100%] md:-tracking-[2px] lg:text-6xl/[100%] lg:-tracking-[2.4px]">
+                    Assesment</h3>
+                  <p class="text-sm/[152%] -tracking-[.28px] text-black/60 md:text-base/[152%] md:-tracking-[.32px]">
+                    Learn the data recovery solution, cost, process, and security measures for complete data recovery.
+                  </p>
                 </div>
-                <a href="#" class="rounded border border-[#6FD2C0] bg-[#6FD2C0] px-4 py-3 text-base/[100%] font-medium -tracking-[.32px] text-black hover:bg-[#6fd2c0c7] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#437e73]">Contact Us Today</a>
               </div>
-              <svg class="mx-auto w-2.5 shrink-0" xmlns="http://www.w3.org/2000/svg" width="10" height="51" viewBox="0 0 10 51" fill="none">
+              <svg class="mx-auto w-2.5 shrink-0" xmlns="http://www.w3.org/2000/svg" width="10" height="51"
+                viewBox="0 0 10 51" fill="none">
                 <line x1="5" y1="2" x2="5" y2="50" stroke="black" stroke-dasharray="2 2" />
                 <path d="M5 51L0 45.7368L0.7 45L5 49.5263L9.3 45L10 45.7368L5 51Z" fill="black" />
                 <circle cx="5" cy="4" r="4" fill="#6FD2C0" />
               </svg>
               <div class="flex w-full flex-col items-start gap-6 rounded-lg bg-[#E6EFEF] p-5 md:p-8 lg:w-[610px]">
-                <svg class="size-9 md:size-11 lg:size-12" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
-                  <path d="M5.80078 20.3299V23.9623M44.2008 21.8867V25.6488M33.1738 24.4813V33.9515M27.7251 27.7245V39.5299M22.2765 23.184V34.211M16.8278 20.3299V29.411M11.2494 16.0488V24.8704M38.7521 21.8867V29.6705" stroke="black" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
-                  <path d="M27.7234 40.5679C28.2966 40.5679 28.7612 40.1032 28.7612 39.53C28.7612 38.9568 28.2966 38.4922 27.7234 38.4922C27.1502 38.4922 26.6855 38.9568 26.6855 39.53C26.6855 40.1032 27.1502 40.5679 27.7234 40.5679Z" fill="black" />
-                  <path d="M6.18919 1C3.33513 1 1 3.33513 1 6.18919V43.8108C1 46.6649 3.33513 49 6.18919 49H43.8108C46.6649 49 49 46.6649 49 43.8108V6.18919C49 3.33513 46.6649 1 43.8108 1H6.18919Z" stroke="black" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+                <svg class="size-9 md:size-11 lg:size-12" xmlns="http://www.w3.org/2000/svg" width="50" height="50"
+                  viewBox="0 0 50 50" fill="none">
+                  <path
+                    d="M5.80078 20.3299V23.9623M44.2008 21.8867V25.6488M33.1738 24.4813V33.9515M27.7251 27.7245V39.5299M22.2765 23.184V34.211M16.8278 20.3299V29.411M11.2494 16.0488V24.8704M38.7521 21.8867V29.6705"
+                    stroke="black" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+                  <path
+                    d="M27.7234 40.5679C28.2966 40.5679 28.7612 40.1032 28.7612 39.53C28.7612 38.9568 28.2966 38.4922 27.7234 38.4922C27.1502 38.4922 26.6855 38.9568 26.6855 39.53C26.6855 40.1032 27.1502 40.5679 27.7234 40.5679Z"
+                    fill="black" />
+                  <path
+                    d="M6.18919 1C3.33513 1 1 3.33513 1 6.18919V43.8108C1 46.6649 3.33513 49 6.18919 49H43.8108C46.6649 49 49 46.6649 49 43.8108V6.18919C49 3.33513 46.6649 1 43.8108 1H6.18919Z"
+                    stroke="black" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
                 <div class="space-y-2">
-                  <h3 class="font-['Silka'] text-[2rem]/[100%] -tracking-[1.28px] text-black md:text-5xl/[100%] md:-tracking-[2px] lg:text-6xl/[100%] lg:-tracking-[2.4px]">Recovery</h3>
-                  <p class="text-sm/[152%] -tracking-[.28px] text-black/60 md:text-base/[152%] md:-tracking-[.32px]">Learn the data recovery solution, cost, process, and security measures for complete data recovery.</p>
+                  <h3
+                    class="font-['Silka'] text-[2rem]/[100%] -tracking-[1.28px] text-black md:text-5xl/[100%] md:-tracking-[2px] lg:text-6xl/[100%] lg:-tracking-[2.4px]">
+                    Recovery</h3>
+                  <p class="text-sm/[152%] -tracking-[.28px] text-black/60 md:text-base/[152%] md:-tracking-[.32px]">
+                    Learn the data recovery solution, cost, process, and security measures for complete data recovery.
+                  </p>
                 </div>
-                <a href="#" class="rounded border border-[#6FD2C0] bg-[#6FD2C0] px-4 py-3 text-base/[100%] font-medium -tracking-[.32px] text-black hover:bg-[#6fd2c0c7] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#437e73]">Contact Us Today</a>
               </div>
-              <svg class="mx-auto w-2.5 shrink-0" xmlns="http://www.w3.org/2000/svg" width="10" height="51" viewBox="0 0 10 51" fill="none">
+              <svg class="mx-auto w-2.5 shrink-0" xmlns="http://www.w3.org/2000/svg" width="10" height="51"
+                viewBox="0 0 10 51" fill="none">
                 <line x1="5" y1="2" x2="5" y2="50" stroke="black" stroke-dasharray="2 2" />
                 <path d="M5 51L0 45.7368L0.7 45L5 49.5263L9.3 45L10 45.7368L5 51Z" fill="black" />
                 <circle cx="5" cy="4" r="4" fill="#6FD2C0" />
               </svg>
               <div class="flex w-full flex-col items-start gap-6 rounded-lg bg-[#E6EFEF] p-5 md:p-8 lg:w-[610px]">
-                <svg class="size-9 md:size-11 lg:size-12" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
-                  <path d="M5.80078 20.3299V23.9623M44.2008 21.8867V25.6488M33.1738 24.4813V33.9515M27.7251 27.7245V39.5299M22.2765 23.184V34.211M16.8278 20.3299V29.411M11.2494 16.0488V24.8704M38.7521 21.8867V29.6705" stroke="black" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
-                  <path d="M27.7234 40.5679C28.2966 40.5679 28.7612 40.1032 28.7612 39.53C28.7612 38.9568 28.2966 38.4922 27.7234 38.4922C27.1502 38.4922 26.6855 38.9568 26.6855 39.53C26.6855 40.1032 27.1502 40.5679 27.7234 40.5679Z" fill="black" />
-                  <path d="M6.18919 1C3.33513 1 1 3.33513 1 6.18919V43.8108C1 46.6649 3.33513 49 6.18919 49H43.8108C46.6649 49 49 46.6649 49 43.8108V6.18919C49 3.33513 46.6649 1 43.8108 1H6.18919Z" stroke="black" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+                <svg class="size-9 md:size-11 lg:size-12" xmlns="http://www.w3.org/2000/svg" width="50" height="50"
+                  viewBox="0 0 50 50" fill="none">
+                  <path
+                    d="M5.80078 20.3299V23.9623M44.2008 21.8867V25.6488M33.1738 24.4813V33.9515M27.7251 27.7245V39.5299M22.2765 23.184V34.211M16.8278 20.3299V29.411M11.2494 16.0488V24.8704M38.7521 21.8867V29.6705"
+                    stroke="black" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+                  <path
+                    d="M27.7234 40.5679C28.2966 40.5679 28.7612 40.1032 28.7612 39.53C28.7612 38.9568 28.2966 38.4922 27.7234 38.4922C27.1502 38.4922 26.6855 38.9568 26.6855 39.53C26.6855 40.1032 27.1502 40.5679 27.7234 40.5679Z"
+                    fill="black" />
+                  <path
+                    d="M6.18919 1C3.33513 1 1 3.33513 1 6.18919V43.8108C1 46.6649 3.33513 49 6.18919 49H43.8108C46.6649 49 49 46.6649 49 43.8108V6.18919C49 3.33513 46.6649 1 43.8108 1H6.18919Z"
+                    stroke="black" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
                 <div class="space-y-2">
-                  <h3 class="font-['Silka'] text-[2rem]/[100%] -tracking-[1.28px] text-black md:text-5xl/[100%] md:-tracking-[2px] lg:text-6xl/[100%] lg:-tracking-[2.4px]">Data Returned</h3>
-                  <p class="text-sm/[152%] -tracking-[.28px] text-black/60 md:text-base/[152%] md:-tracking-[.32px]">Learn the data recovery solution, cost, process, and security measures for complete data recovery.</p>
+                  <h3
+                    class="font-['Silka'] text-[2rem]/[100%] -tracking-[1.28px] text-black md:text-5xl/[100%] md:-tracking-[2px] lg:text-6xl/[100%] lg:-tracking-[2.4px]">
+                    Data Returned</h3>
+                  <p class="text-sm/[152%] -tracking-[.28px] text-black/60 md:text-base/[152%] md:-tracking-[.32px]">
+                    Learn the data recovery solution, cost, process, and security measures for complete data recovery.
+                  </p>
                 </div>
-                <a href="#" class="rounded border border-[#6FD2C0] bg-[#6FD2C0] px-4 py-3 text-base/[100%] font-medium -tracking-[.32px] text-black hover:bg-[#6fd2c0c7] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#437e73]">Contact Us Today</a>
               </div>
             </div>
             <!-- <div class="absolute inset-x-0 -bottom-[1.875rem] hidden min-h-[252px] bg-gradient-to-b from-transparent to-[#E6EFEF] md:-bottom-12 lg:-bottom-20 lg:block rounded-lg"></div> -->
           </div>
         </div>
-        <div class="absolute inset-x-0 -bottom-[1.875rem] lg:hidden min-h-[252px] bg-gradient-to-b from-transparent to-[#E6EFEF] md:-bottom-12 lg:-bottom-20 lg:hidden rounded-lg"></div>
+        <div
+          class="absolute inset-x-0 -bottom-[1.875rem] lg:hidden min-h-[252px] bg-gradient-to-b from-transparent to-[#E6EFEF] md:-bottom-12 lg:-bottom-20 lg:hidden rounded-lg">
+        </div>
       </div>
     </div>
-    
-    <div class="overflow-hidden bg-white">
-      <div class="relative isolate mx-auto max-w-[1440px] space-y-[3.75rem] py-20">
-        <div class="mx-auto max-w-[450px] space-y-2 text-center">
-          <h2 class="text-[2rem]/[120%] -tracking-[1.28px] text-black font-['Silka']">Frequently Asked Questions</h2>
-          <p class="text-base/[152%] -tracking-[.32px] text-black/60">Learn the data recovery solution, cost, process,
-            and security measures for complete data recovery.</p>
+    <div id="faq" class="overflow-hidden bg-white">
+      <div class="relative isolate mx-auto max-w-[1440px] space-y-10 px-4 py-[1.875rem] md:px-14 md:py-12 lg:space-y-[3.75rem] lg:px-[6.25rem] lg:py-20">
+        <div id="faq-text" class="mx-auto max-w-[450px] space-y-2 text-center">
+          <h2 class="font-['Silka'] text-[1.75rem]/[112%] -tracking-[1.12px] text-black md:text-[2rem]/[120%] md:-tracking-[1.28px]">Frequently Asked Questions</h2>
+          <p class="text-xs/[152%] -tracking-[.28px] text-black/60 md:text-sm/[152%] md:-tracking-[.28px] lg:text-base/[152%] lg:-tracking-[.32px]">Learn the data recovery solution, cost, process, and security measures for complete data recovery.</p>
         </div>
-        <div class="mx-auto max-w-[610px] space-y-5">
+        <div id="faq-list" class="mx-auto max-w-[610px] space-y-5">
           <div class="overflow-hidden rounded border border-[#02BE9D]">
-            <div class="flex justify-between p-5 text-lg/[112%] -tracking-[.36px] text-black">
+            <div class="flex justify-between p-5 text-sm/[112%] -tracking-[.28px] md:text-base/[112%] md:-tracking-[.32px] lg:text-lg/[112%] lg:-tracking-[.36px] text-black" data-open="false">
               What devices do you recover data from?
               <span>
-                <svg class="size-5" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
-                  fill="none">
-                  <path d="M18 9.30469H2V10.696H18V9.30469Z" fill="#02BE9D" />
+                <svg class="size-5" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path id="faq-icon" class="transition-all origin-center" d="M9.30469 2L9.30469 18H10.696V2H9.30469Z" fill="#02BE9D"/>
+                  <path d="M18 9.30469H2V10.696H18V9.30469Z" fill="#02BE9D"/>
                 </svg>
               </span>
             </div>
-            <p class="p-5 pt-0 text-sm/[152%] -tracking-[.28px] text-black/60">We recover data from a wide range of
-              devices, including laptops, desktops, external hard drives, SSDs, RAID arrays, USB flash drives, memory
-              cards, and even mobile devices like smartphones and tablets.</p>
+            <p class="p-5 pt-0 text-xs/[152%] -tracking-[.24px] md:text-sm/[152%] md:-tracking-[.28px] text-black/60 overflow-hidden">We recover data from a wide range of devices, including laptops, desktops, external hard drives, SSDs, RAID arrays, USB flash drives, memory cards, and even mobile devices like smartphones and tablets.</p>
           </div>
-          <div class="overflow-hidden rounded border border-black/20">
-            <div class="flex justify-between p-5 text-lg/[112%] -tracking-[.36px] text-black">
+          <div class="overflow-hidden rounded border border-[#02BE9D]">
+            <div class="flex justify-between p-5 text-sm/[112%] -tracking-[.28px] md:text-base/[112%] md:-tracking-[.32px] lg:text-lg/[112%] lg:-tracking-[.36px] text-black" data-open="false">
               How long does recovery take?
               <span>
-                <svg class="size-5" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
-                  fill="none">
-                  <path d="M18 9.30435H10.6957V2H9.30435V9.30435H2V10.6957H9.30435V18H10.6957V10.6957H18V9.30435Z"
-                    fill="#02BE9D" />
+                <svg class="size-5" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path id="faq-icon" class="transition-all origin-center" d="M9.30469 2L9.30469 18H10.696V2H9.30469Z" fill="#02BE9D"/>
+                  <path d="M18 9.30469H2V10.696H18V9.30469Z" fill="#02BE9D"/>
                 </svg>
               </span>
             </div>
-            <p class="hidden overflow-hidden p-5 pt-0 text-sm/[152%] -tracking-[.28px] text-black/60">We recover data
-              from a wide range of devices, including laptops, desktops, external hard drives, SSDs, RAID arrays, USB
-              flash drives, memory cards, and even mobile devices like smartphones and tablets.</p>
+            <p class="p-5 pt-0 text-xs/[152%] -tracking-[.24px] md:text-sm/[152%] md:-tracking-[.28px] text-black/60 overflow-hidden">We recover data from a wide range of devices, including laptops, desktops, external hard drives, SSDs, RAID arrays, USB flash drives, memory cards, and even mobile devices like smartphones and tablets.</p>
           </div>
-          <div class="overflow-hidden rounded border border-black/20">
-            <div class="flex justify-between p-5 text-lg/[112%] -tracking-[.36px] text-black">
+          <div class="overflow-hidden rounded border border-[#02BE9D]">
+            <div class="flex justify-between p-5 text-sm/[112%] -tracking-[.28px] md:text-base/[112%] md:-tracking-[.32px] lg:text-lg/[112%] lg:-tracking-[.36px] text-black" data-open="false">
               How secure is my data?
               <span>
-                <svg class="size-5" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
-                  fill="none">
-                  <path d="M18 9.30435H10.6957V2H9.30435V9.30435H2V10.6957H9.30435V18H10.6957V10.6957H18V9.30435Z"
-                    fill="#02BE9D" />
+                <svg class="size-5" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path id="faq-icon" class="transition-all origin-center" d="M9.30469 2L9.30469 18H10.696V2H9.30469Z" fill="#02BE9D"/>
+                  <path d="M18 9.30469H2V10.696H18V9.30469Z" fill="#02BE9D"/>
                 </svg>
               </span>
             </div>
-            <p class="hidden overflow-hidden p-5 pt-0 text-sm/[152%] -tracking-[.28px] text-black/60">We recover data
-              from a wide range of devices, including laptops, desktops, external hard drives, SSDs, RAID arrays, USB
-              flash drives, memory cards, and even mobile devices like smartphones and tablets.</p>
+            <p class="p-5 pt-0 text-xs/[152%] -tracking-[.24px] md:text-sm/[152%] md:-tracking-[.28px] text-black/60 overflow-hidden">We recover data from a wide range of devices, including laptops, desktops, external hard drives, SSDs, RAID arrays, USB flash drives, memory cards, and even mobile devices like smartphones and tablets.</p>
           </div>
-          <div class="overflow-hidden rounded border border-black/20">
-            <div class="flex justify-between p-5 text-lg/[112%] -tracking-[.36px] text-black">
+          <div class="overflow-hidden rounded border border-[#02BE9D]">
+            <div class="flex justify-between p-5 text-sm/[112%] -tracking-[.28px] md:text-base/[112%] md:-tracking-[.32px] lg:text-lg/[112%] lg:-tracking-[.36px] text-black" data-open="false">
               What happens if recovery isn’t possible?
               <span>
-                <svg class="size-5" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
-                  fill="none">
-                  <path d="M18 9.30435H10.6957V2H9.30435V9.30435H2V10.6957H9.30435V18H10.6957V10.6957H18V9.30435Z"
-                    fill="#02BE9D" />
+                <svg class="size-5" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path id="faq-icon" class="transition-all origin-center" d="M9.30469 2L9.30469 18H10.696V2H9.30469Z" fill="#02BE9D"/>
+                  <path d="M18 9.30469H2V10.696H18V9.30469Z" fill="#02BE9D"/>
                 </svg>
               </span>
             </div>
-            <p class="hidden overflow-hidden p-5 pt-0 text-sm/[152%] -tracking-[.28px] text-black/60">We recover data
-              from a wide range of devices, including laptops, desktops, external hard drives, SSDs, RAID arrays, USB
-              flash drives, memory cards, and even mobile devices like smartphones and tablets.</p>
+            <p class="p-5 pt-0 text-xs/[152%] -tracking-[.24px] md:text-sm/[152%] md:-tracking-[.28px] text-black/60 overflow-hidden">We recover data from a wide range of devices, including laptops, desktops, external hard drives, SSDs, RAID arrays, USB flash drives, memory cards, and even mobile devices like smartphones and tablets.</p>
           </div>
         </div>
       </div>
-    </div>
-    <div class="relative bg-[#1A3030]">
+    </div>    
+    <div id="bridge" class="relative bg-[#1A3030]">
       <div
         class="absolute inset-0 h-full w-full bg-[radial-gradient(#142424_2px,transparent_2px)] [background-size:20px_20px]">
       </div>
-      <div class="relative isolate mx-auto max-w-[1440px]">
+      <div class="relative isolate mx-auto max-w-[1440px] px-4 md:px-14 lg:px-[6.25rem]">
         <div class="relative h-[200svh]">
-          <div class="sticky top-0 flex h-svh items-center justify-center py-20">
-            <p class="max-w-[820px] text-center text-[2.5rem]/[128%] -tracking-[1.6px] text-white/30 font-['Silka']">AI
-              Data Recovery
-              knows that losing access to your data can be a stressful time, when it comes to losing critical or
-              sensitive data.</p>
+          <div class="sticky top-0 flex h-svh items-center justify-center">
+            <p id="bridge-text"
+              class="max-w-[820px] text-center font-['Silka'] text-2xl/[128%] -tracking-[.96px] text-white/30 md:text-[2rem]/[128%] lg:text-[2.5rem]/[128%] lg:-tracking-[1.6px]">
+              AI Data Recovery knows that losing access to your data can be a stressful time, when it comes to losing
+              critical or sensitive data.</p>
           </div>
         </div>
       </div>
     </div>
     <div class="bg-white">
-      <div class="relative isolate">
-        <div class="flex items-center justify-center gap-7 overflow-hidden py-20">
-          <p
-            class="inline-flex shrink-0 items-center gap-7 text-[6.25rem]/[100%] -tracking-[4px] text-black font-['Silka']">
+      <div class="relative mx-auto max-w-[1440px] isolate flex flex-col py-[1.875rem] md:py-12 lg:py-20 overflow-hidden">
+        <div class="flex items-center justify-center gap-7">
+          <p class="inline-flex shrink-0 items-center gap-7 font-['Silka'] text-[6.25rem]/[100%] -tracking-[4px] text-black">
             <span>
-              <svg class="size-[88px]" xmlns="http://www.w3.org/2000/svg" width="88" height="88" viewBox="0 0 88 88"
-                fill="none">
+              <svg class="size-[88px]" xmlns="http://www.w3.org/2000/svg" width="88" height="88" viewBox="0 0 88 88" fill="none">
                 <g clip-path="url(#clip0_351_101787)">
-                  <path
-                    d="M87.5 20.926V65.8539H74.3868V14.1047V13.6047H73.8868H14.1132H13.6132V14.1047V87.5001H0.5V20.8157C0.5 9.57571 9.5998 0.473652 20.8033 0.500057L67.2939 0.61038C78.461 0.636785 87.5 9.72253 87.5 20.926Z"
-                    stroke="#6FD2C0" />
-                  <path
-                    d="M42.324 35.2523H22.0859V22.0977H65.9161V65.8512H52.8029V45.7604V44.5508L51.9488 45.4074L31.4183 65.9981L23.9466 73.4918L23.6225 73.8168C22.6312 71.3259 22.0859 68.6079 22.0859 65.7621C22.0859 59.9972 24.3706 54.4665 28.4342 50.391L42.6781 36.1053L43.5287 35.2523H42.324ZM43.7582 87.4994C34.8289 87.4994 27.1595 82.0823 23.8407 74.3448H24.3007H87.501V87.4994H43.7582Z"
-                    stroke="#6FD2C0" />
+                  <path d="M87.5 20.926V65.8539H74.3868V14.1047V13.6047H73.8868H14.1132H13.6132V14.1047V87.5001H0.5V20.8157C0.5 9.57571 9.5998 0.473652 20.8033 0.500057L67.2939 0.61038C78.461 0.636785 87.5 9.72253 87.5 20.926Z" stroke="#6FD2C0" />
+                  <path d="M42.324 35.2523H22.0859V22.0977H65.9161V65.8512H52.8029V45.7604V44.5508L51.9488 45.4074L31.4183 65.9981L23.9466 73.4918L23.6225 73.8168C22.6312 71.3259 22.0859 68.6079 22.0859 65.7621C22.0859 59.9972 24.3706 54.4665 28.4342 50.391L42.6781 36.1053L43.5287 35.2523H42.324ZM43.7582 87.4994C34.8289 87.4994 27.1595 82.0823 23.8407 74.3448H24.3007H87.501V87.4994H43.7582Z" stroke="#6FD2C0" />
                 </g>
                 <defs>
                   <clipPath id="clip0_351_101787">
@@ -987,18 +1027,12 @@
             </span>
             Contact Us
           </p>
-          <p
-            class="inline-flex shrink-0 items-center gap-7 text-[6.25rem]/[100%] -tracking-[4px] text-black font-['Silka']">
+          <p class="inline-flex shrink-0 items-center gap-7 font-['Silka'] text-[6.25rem]/[100%] -tracking-[4px] text-black">
             <span>
-              <svg class="size-[88px]" xmlns="http://www.w3.org/2000/svg" width="88" height="88" viewBox="0 0 88 88"
-                fill="none">
+              <svg class="size-[88px]" xmlns="http://www.w3.org/2000/svg" width="88" height="88" viewBox="0 0 88 88" fill="none">
                 <g clip-path="url(#clip0_351_101783)">
-                  <path
-                    d="M88 20.926V66.3539H73.8868V14.1047H14.1132V88.0001H0V20.8157C0 9.30047 9.32302 -0.0270015 20.8045 5.87306e-05L67.2951 0.110381C78.7392 0.137442 88 9.44826 88 20.926Z"
-                    fill="#6FD2C0" />
-                  <path
-                    d="M88.001 73.8448V87.9994H43.7582C31.5129 87.9994 21.5859 78.0433 21.5859 65.7621C21.5859 59.865 23.9229 54.2074 28.0801 50.038L42.324 35.7523H21.5859V21.5977H66.4161V66.3512H52.3029V45.7604L31.7724 66.3512L24.3007 73.8448H88.001Z"
-                    fill="#6FD2C0" />
+                  <path d="M88 20.926V66.3539H73.8868V14.1047H14.1132V88.0001H0V20.8157C0 9.30047 9.32302 -0.0270015 20.8045 5.87306e-05L67.2951 0.110381C78.7392 0.137442 88 9.44826 88 20.926Z" fill="#6FD2C0" />
+                  <path d="M88.001 73.8448V87.9994H43.7582C31.5129 87.9994 21.5859 78.0433 21.5859 65.7621C21.5859 59.865 23.9229 54.2074 28.0801 50.038L42.324 35.7523H21.5859V21.5977H66.4161V66.3512H52.3029V45.7604L31.7724 66.3512L24.3007 73.8448H88.001Z" fill="#6FD2C0" />
                 </g>
                 <defs>
                   <clipPath id="clip0_351_101783">
@@ -1009,18 +1043,12 @@
             </span>
             AI Data Recovery
           </p>
-          <p
-            class="inline-flex shrink-0 items-center gap-7 text-[6.25rem]/[100%] -tracking-[4px] text-black font-['Silka']">
+          <p class="inline-flex shrink-0 items-center gap-7 font-['Silka'] text-[6.25rem]/[100%] -tracking-[4px] text-black">
             <span>
-              <svg class="size-[88px]" xmlns="http://www.w3.org/2000/svg" width="88" height="88" viewBox="0 0 88 88"
-                fill="none">
+              <svg class="size-[88px]" xmlns="http://www.w3.org/2000/svg" width="88" height="88" viewBox="0 0 88 88" fill="none">
                 <g clip-path="url(#clip0_351_101787)">
-                  <path
-                    d="M87.5 20.926V65.8539H74.3868V14.1047V13.6047H73.8868H14.1132H13.6132V14.1047V87.5001H0.5V20.8157C0.5 9.57571 9.5998 0.473652 20.8033 0.500057L67.2939 0.61038C78.461 0.636785 87.5 9.72253 87.5 20.926Z"
-                    stroke="#6FD2C0" />
-                  <path
-                    d="M42.324 35.2523H22.0859V22.0977H65.9161V65.8512H52.8029V45.7604V44.5508L51.9488 45.4074L31.4183 65.9981L23.9466 73.4918L23.6225 73.8168C22.6312 71.3259 22.0859 68.6079 22.0859 65.7621C22.0859 59.9972 24.3706 54.4665 28.4342 50.391L42.6781 36.1053L43.5287 35.2523H42.324ZM43.7582 87.4994C34.8289 87.4994 27.1595 82.0823 23.8407 74.3448H24.3007H87.501V87.4994H43.7582Z"
-                    stroke="#6FD2C0" />
+                  <path d="M87.5 20.926V65.8539H74.3868V14.1047V13.6047H73.8868H14.1132H13.6132V14.1047V87.5001H0.5V20.8157C0.5 9.57571 9.5998 0.473652 20.8033 0.500057L67.2939 0.61038C78.461 0.636785 87.5 9.72253 87.5 20.926Z" stroke="#6FD2C0" />
+                  <path d="M42.324 35.2523H22.0859V22.0977H65.9161V65.8512H52.8029V45.7604V44.5508L51.9488 45.4074L31.4183 65.9981L23.9466 73.4918L23.6225 73.8168C22.6312 71.3259 22.0859 68.6079 22.0859 65.7621C22.0859 59.9972 24.3706 54.4665 28.4342 50.391L42.6781 36.1053L43.5287 35.2523H42.324ZM43.7582 87.4994C34.8289 87.4994 27.1595 82.0823 23.8407 74.3448H24.3007H87.501V87.4994H43.7582Z" stroke="#6FD2C0" />
                 </g>
                 <defs>
                   <clipPath id="clip0_351_101787">
@@ -1032,114 +1060,84 @@
             Contact Us
           </p>
         </div>
-        <div class="flex flex-wrap items-center gap-x-3 gap-y-4 px-[6.25rem] py-20">
+        <div class="flex flex-wrap items-center gap-x-3 gap-y-4 px-4 pt-[1.875rem] md:px-14 md:pt-12 lg:px-[6.25rem] lg:pt-20">
           <div class="grid w-full grid-cols-[40%_1fr] gap-3">
             <div class="flex w-full items-center gap-3">
               <p class="shrink-0 text-[1.75rem]/[100%] -tracking-[.56px] text-black">My Name is</p>
               <div class="w-full">
                 <label class="sr-only" for="name">Name</label>
-                <input
-                  class="w-full min-w-[340px] border-b border-black/20 py-2.5 text-lg/[100%] -tracking-[.36px] text-black outline-none placeholder:text-black/60"
-                  type="text" name="name" id="name" placeholder="Type your name*" />
+                <input class="w-full min-w-[340px] border-b border-black/20 py-2.5 text-lg/[100%] -tracking-[.36px] text-black outline-none placeholder:text-black/60" type="text" name="name" id="name" placeholder="Type your name*" />
               </div>
             </div>
             <div class="flex w-full items-center gap-3">
               <p class="shrink-0 text-[1.75rem]/[100%] -tracking-[.56px] text-black">, feel free to reach me at</p>
               <div class="w-full">
                 <label class="sr-only" for="email">Name</label>
-                <input
-                  class="w-full min-w-[340px] border-b border-black/20 py-2.5 text-lg/[100%] -tracking-[.36px] text-black outline-none placeholder:text-black/60"
-                  type="text" name="email" id="email" placeholder="Type your email*" />
+                <input class="w-full min-w-[340px] border-b border-black/20 py-2.5 text-lg/[100%] -tracking-[.36px] text-black outline-none placeholder:text-black/60" type="text" name="email" id="email" placeholder="Type your email*" />
               </div>
             </div>
           </div>
           <div class="flex items-center gap-3">
             <p class="text-[1.75rem]/[100%] -tracking-[.56px] text-black">I'm looking for help with my</p>
             <div class="inline-flex items-center gap-1.5 rounded border border-black/20 p-2.5">
-              <input
-                class="border-b border-black/20 text-lg/[100%] -tracking-[.36px] text-black placeholder:text-black/60"
-                type="radio" id="css" name="fav_language" value="CSS" />
+              <input class="border-b border-black/20 text-lg/[100%] -tracking-[.36px] text-black placeholder:text-black/60" type="radio" id="css" name="fav_language" value="CSS" />
               <label class="text-lg/[100%] -tracking-[.36px] text-black" for="email">Smartphone</label>
             </div>
             <div class="inline-flex items-center gap-1.5 rounded border border-black/20 p-2.5">
-              <input
-                class="border-b border-black/20 text-lg/[100%] -tracking-[.36px] text-black placeholder:text-black/60"
-                type="radio" id="css" name="fav_language" value="CSS" />
+              <input class="border-b border-black/20 text-lg/[100%] -tracking-[.36px] text-black placeholder:text-black/60" type="radio" id="css" name="fav_language" value="CSS" />
               <label class="text-lg/[100%] -tracking-[.36px] text-black" for="email">Computer</label>
             </div>
             <div class="inline-flex items-center gap-1.5 rounded border border-black/20 p-2.5">
-              <input
-                class="border-b border-black/20 text-lg/[100%] -tracking-[.36px] text-black placeholder:text-black/60"
-                type="radio" id="css" name="fav_language" value="CSS" />
+              <input class="border-b border-black/20 text-lg/[100%] -tracking-[.36px] text-black placeholder:text-black/60" type="radio" id="css" name="fav_language" value="CSS" />
               <label class="text-lg/[100%] -tracking-[.36px] text-black" for="email">HDD</label>
             </div>
             <div class="inline-flex items-center gap-1.5 rounded border border-black/20 p-2.5">
-              <input
-                class="border-b border-black/20 text-lg/[100%] -tracking-[.36px] text-black placeholder:text-black/60"
-                type="radio" id="css" name="fav_language" value="CSS" />
+              <input class="border-b border-black/20 text-lg/[100%] -tracking-[.36px] text-black placeholder:text-black/60" type="radio" id="css" name="fav_language" value="CSS" />
               <label class="text-lg/[100%] -tracking-[.36px] text-black" for="email">SSD</label>
             </div>
             <div class="inline-flex items-center gap-1.5 rounded border border-black/20 p-2.5">
-              <input
-                class="border-b border-black/20 text-lg/[100%] -tracking-[.36px] text-black placeholder:text-black/60"
-                type="radio" id="css" name="fav_language" value="CSS" />
+              <input class="border-b border-black/20 text-lg/[100%] -tracking-[.36px] text-black placeholder:text-black/60" type="radio" id="css" name="fav_language" value="CSS" />
               <label class="text-lg/[100%] -tracking-[.36px] text-black" for="email">Ransomware</label>
             </div>
             <div class="inline-flex items-center gap-1.5 rounded border border-black/20 p-2.5">
-              <input
-                class="border-b border-black/20 text-lg/[100%] -tracking-[.36px] text-black placeholder:text-black/60"
-                type="radio" id="css" name="fav_language" value="CSS" />
+              <input class="border-b border-black/20 text-lg/[100%] -tracking-[.36px] text-black placeholder:text-black/60" type="radio" id="css" name="fav_language" value="CSS" />
               <label class="text-lg/[100%] -tracking-[.36px] text-black" for="email">Server Data</label>
             </div>
           </div>
           <div class="flex w-full items-center gap-3">
             <p class="text-[1.75rem]/[100%] -tracking-[.56px] text-black">Did you find the model number?</p>
             <div class="inline-flex items-center gap-1.5 rounded border border-black/20 p-2.5">
-              <input
-                class="border-b border-black/20 text-lg/[100%] -tracking-[.36px] text-black placeholder:text-black/60"
-                type="radio" id="css" name="fav_language" value="CSS" />
+              <input class="border-b border-black/20 text-lg/[100%] -tracking-[.36px] text-black placeholder:text-black/60" type="radio" id="css" name="fav_language" value="CSS" />
               <label class="text-lg/[100%] -tracking-[.36px] text-black" for="email">Yes</label>
             </div>
             <div class="inline-flex items-center gap-1.5 rounded border border-black/20 p-2.5">
-              <input
-                class="border-b border-black/20 text-lg/[100%] -tracking-[.36px] text-black placeholder:text-black/60"
-                type="radio" id="css" name="fav_language" value="CSS" />
+              <input class="border-b border-black/20 text-lg/[100%] -tracking-[.36px] text-black placeholder:text-black/60" type="radio" id="css" name="fav_language" value="CSS" />
               <label class="text-lg/[100%] -tracking-[.36px] text-black" for="email">No</label>
             </div>
           </div>
           <div class="flex w-full items-center gap-3">
-            <p class="shrink-0 text-[1.75rem]/[100%] -tracking-[.56px] text-black">What is the device's model number?
-            </p>
+            <p class="shrink-0 text-[1.75rem]/[100%] -tracking-[.56px] text-black">What is the device's model number?</p>
             <div class="w-full">
               <label class="sr-only" for="name">Name</label>
-              <input
-                class="w-full min-w-[340px] border-b border-black/20 py-2.5 text-lg/[100%] -tracking-[.36px] text-black outline-none placeholder:text-black/60"
-                type="text" name="name" id="name" placeholder="Type your device’s model number*" />
+              <input class="w-full min-w-[340px] border-b border-black/20 py-2.5 text-lg/[100%] -tracking-[.36px] text-black outline-none placeholder:text-black/60" type="text" name="name" id="name" placeholder="Type your device’s model number*" />
             </div>
           </div>
           <div class="grid w-full grid-cols-[1fr_30%] gap-3">
             <div class="flex w-full items-center gap-3">
-              <p class="shrink-0 text-[1.75rem]/[100%] -tracking-[.56px] text-black">Phone number we can reach you at
-              </p>
+              <p class="shrink-0 text-[1.75rem]/[100%] -tracking-[.56px] text-black">Phone number we can reach you at</p>
               <div class="w-full">
                 <label class="sr-only" for="name">Name</label>
-                <input
-                  class="w-full min-w-[340px] border-b border-black/20 py-2.5 text-lg/[100%] -tracking-[.36px] text-black outline-none placeholder:text-black/60"
-                  type="text" name="name" id="name" placeholder="Type your name*" />
+                <input class="w-full min-w-[340px] border-b border-black/20 py-2.5 text-lg/[100%] -tracking-[.36px] text-black outline-none placeholder:text-black/60" type="text" name="name" id="name" placeholder="Type your name*" />
               </div>
             </div>
             <div class="flex w-full items-center gap-3">
               <p class="text-[1.75rem]/[100%] -tracking-[.56px] text-black">, Number for</p>
               <div class="inline-flex items-center gap-1.5 rounded border border-black/20 p-2.5">
-                <input
-                  class="border-b border-black/20 text-lg/[100%] -tracking-[.36px] text-black placeholder:text-black/60"
-                  type="radio" id="css" name="fav_language" value="CSS" />
+                <input class="border-b border-black/20 text-lg/[100%] -tracking-[.36px] text-black placeholder:text-black/60" type="radio" id="css" name="fav_language" value="CSS" />
                 <label class="text-lg/[100%] -tracking-[.36px] text-black" for="email">Personal</label>
               </div>
               <div class="inline-flex items-center gap-1.5 rounded border border-black/20 p-2.5">
-                <input
-                  class="border-b border-black/20 text-lg/[100%] -tracking-[.36px] text-black placeholder:text-black/60"
-                  type="radio" id="css" name="fav_language" value="CSS" />
+                <input class="border-b border-black/20 text-lg/[100%] -tracking-[.36px] text-black placeholder:text-black/60" type="radio" id="css" name="fav_language" value="CSS" />
                 <label class="text-lg/[100%] -tracking-[.36px] text-black" for="email">Work</label>
               </div>
             </div>
@@ -1147,58 +1145,43 @@
           <div class="flex w-full items-center gap-3">
             <p class="text-[1.75rem]/[100%] -tracking-[.56px] text-black">How do you prefer to be contacted?</p>
             <div class="inline-flex items-center gap-1.5 rounded border border-black/20 p-2.5">
-              <input
-                class="border-b border-black/20 text-lg/[100%] -tracking-[.36px] text-black placeholder:text-black/60"
-                type="radio" id="css" name="fav_language" value="CSS" />
+              <input class="border-b border-black/20 text-lg/[100%] -tracking-[.36px] text-black placeholder:text-black/60" type="radio" id="css" name="fav_language" value="CSS" />
               <label class="text-lg/[100%] -tracking-[.36px] text-black" for="email">Text message</label>
             </div>
             <div class="inline-flex items-center gap-1.5 rounded border border-black/20 p-2.5">
-              <input
-                class="border-b border-black/20 text-lg/[100%] -tracking-[.36px] text-black placeholder:text-black/60"
-                type="radio" id="css" name="fav_language" value="CSS" />
+              <input class="border-b border-black/20 text-lg/[100%] -tracking-[.36px] text-black placeholder:text-black/60" type="radio" id="css" name="fav_language" value="CSS" />
               <label class="text-lg/[100%] -tracking-[.36px] text-black" for="email">Email</label>
             </div>
             <div class="inline-flex items-center gap-1.5 rounded border border-black/20 p-2.5">
-              <input
-                class="border-b border-black/20 text-lg/[100%] -tracking-[.36px] text-black placeholder:text-black/60"
-                type="radio" id="css" name="fav_language" value="CSS" />
+              <input class="border-b border-black/20 text-lg/[100%] -tracking-[.36px] text-black placeholder:text-black/60" type="radio" id="css" name="fav_language" value="CSS" />
               <label class="text-lg/[100%] -tracking-[.36px] text-black" for="email">Phone call</label>
             </div>
           </div>
           <div class="flex w-full items-center gap-3">
             <p class="text-[1.75rem]/[100%] -tracking-[.56px] text-black">Preferred time for communication?</p>
             <div class="inline-flex items-center gap-1.5 rounded border border-black/20 p-2.5">
-              <input
-                class="border-b border-black/20 text-lg/[100%] -tracking-[.36px] text-black placeholder:text-black/60"
-                type="radio" id="css" name="fav_language" value="CSS" />
+              <input class="border-b border-black/20 text-lg/[100%] -tracking-[.36px] text-black placeholder:text-black/60" type="radio" id="css" name="fav_language" value="CSS" />
               <label class="text-lg/[100%] -tracking-[.36px] text-black" for="email">Morning</label>
             </div>
             <div class="inline-flex items-center gap-1.5 rounded border border-black/20 p-2.5">
-              <input
-                class="border-b border-black/20 text-lg/[100%] -tracking-[.36px] text-black placeholder:text-black/60"
-                type="radio" id="css" name="fav_language" value="CSS" />
+              <input class="border-b border-black/20 text-lg/[100%] -tracking-[.36px] text-black placeholder:text-black/60" type="radio" id="css" name="fav_language" value="CSS" />
               <label class="text-lg/[100%] -tracking-[.36px] text-black" for="email">Afternoon</label>
             </div>
           </div>
           <div class="flex w-full items-center gap-3">
-            <p class="text-[1.75rem]/[100%] -tracking-[.56px] text-black">Please provide the address where we can send
-              your shipping label:</p>
+            <p class="text-[1.75rem]/[100%] -tracking-[.56px] text-black">Please provide the address where we can send your shipping label:</p>
           </div>
           <div class="grid w-full grid-cols-2 gap-3">
             <div class="flex w-full items-center gap-3">
               <div class="w-full">
                 <label class="sr-only" for="name">Name</label>
-                <input
-                  class="w-full min-w-[340px] border-b border-black/20 py-2.5 text-lg/[100%] -tracking-[.36px] text-black outline-none placeholder:text-black/60"
-                  type="text" name="name" id="name" placeholder="Street Address*" />
+                <input class="w-full min-w-[340px] border-b border-black/20 py-2.5 text-lg/[100%] -tracking-[.36px] text-black outline-none placeholder:text-black/60" type="text" name="name" id="name" placeholder="Street Address*" />
               </div>
             </div>
             <div class="flex w-full items-center gap-3">
               <div class="w-full">
                 <label class="sr-only" for="name">Name</label>
-                <input
-                  class="w-full min-w-[340px] border-b border-black/20 py-2.5 text-lg/[100%] -tracking-[.36px] text-black outline-none placeholder:text-black/60"
-                  type="text" name="name" id="name" placeholder="City*" />
+                <input class="w-full min-w-[340px] border-b border-black/20 py-2.5 text-lg/[100%] -tracking-[.36px] text-black outline-none placeholder:text-black/60" type="text" name="name" id="name" placeholder="City*" />
               </div>
             </div>
           </div>
@@ -1206,17 +1189,13 @@
             <div class="flex w-full items-center gap-3">
               <div class="w-full">
                 <label class="sr-only" for="name">Name</label>
-                <input
-                  class="w-full min-w-[340px] border-b border-black/20 py-2.5 text-lg/[100%] -tracking-[.36px] text-black outline-none placeholder:text-black/60"
-                  type="text" name="name" id="name" placeholder="State/Province*" />
+                <input class="w-full min-w-[340px] border-b border-black/20 py-2.5 text-lg/[100%] -tracking-[.36px] text-black outline-none placeholder:text-black/60" type="text" name="name" id="name" placeholder="State/Province*" />
               </div>
             </div>
             <div class="flex w-full items-center gap-3">
               <div class="w-full">
                 <label class="sr-only" for="name">Name</label>
-                <input
-                  class="w-full min-w-[340px] border-b border-black/20 py-2.5 text-lg/[100%] -tracking-[.36px] text-black outline-none placeholder:text-black/60"
-                  type="text" name="name" id="name" placeholder="Country*" />
+                <input class="w-full min-w-[340px] border-b border-black/20 py-2.5 text-lg/[100%] -tracking-[.36px] text-black outline-none placeholder:text-black/60" type="text" name="name" id="name" placeholder="Country*" />
               </div>
             </div>
           </div>
@@ -1227,48 +1206,37 @@
             <div class="flex w-full items-center gap-3">
               <div class="w-full">
                 <label class="sr-only" for="name">Name</label>
-                <input
-                  class="w-full min-w-[340px] border-b border-black/20 py-2.5 text-lg/[100%] -tracking-[.36px] text-black outline-none placeholder:text-black/60"
-                  type="text" name="name" id="name" placeholder="Type your issue*" />
+                <input class="w-full min-w-[340px] border-b border-black/20 py-2.5 text-lg/[100%] -tracking-[.36px] text-black outline-none placeholder:text-black/60" type="text" name="name" id="name" placeholder="Type your issue*" />
               </div>
             </div>
           </div>
           <div class="flex w-full items-center gap-3">
             <p class="text-[1.75rem]/[100%] -tracking-[.56px] text-black">What files would you like recovered?</p>
             <div class="inline-flex items-center gap-1.5 rounded border border-black/20 p-2.5">
-              <input
-                class="border-b border-black/20 text-lg/[100%] -tracking-[.36px] text-black placeholder:text-black/60"
-                type="radio" id="css" name="fav_language" value="CSS" />
+              <input class="border-b border-black/20 text-lg/[100%] -tracking-[.36px] text-black placeholder:text-black/60" type="radio" id="css" name="fav_language" value="CSS" />
               <label class="text-lg/[100%] -tracking-[.36px] text-black" for="email">Photo</label>
             </div>
             <div class="inline-flex items-center gap-1.5 rounded border border-black/20 p-2.5">
-              <input
-                class="border-b border-black/20 text-lg/[100%] -tracking-[.36px] text-black placeholder:text-black/60"
-                type="radio" id="css" name="fav_language" value="CSS" />
+              <input class="border-b border-black/20 text-lg/[100%] -tracking-[.36px] text-black placeholder:text-black/60" type="radio" id="css" name="fav_language" value="CSS" />
               <label class="text-lg/[100%] -tracking-[.36px] text-black" for="email">Video</label>
             </div>
             <div class="inline-flex items-center gap-1.5 rounded border border-black/20 p-2.5">
-              <input
-                class="border-b border-black/20 text-lg/[100%] -tracking-[.36px] text-black placeholder:text-black/60"
-                type="radio" id="css" name="fav_language" value="CSS" />
+              <input class="border-b border-black/20 text-lg/[100%] -tracking-[.36px] text-black placeholder:text-black/60" type="radio" id="css" name="fav_language" value="CSS" />
               <label class="text-lg/[100%] -tracking-[.36px] text-black" for="email">Documents</label>
             </div>
           </div>
           <div class="mt-6 flex w-full items-center gap-7">
             <div class="inline-flex items-center gap-2">
               <input class="size-4" type="checkbox" id="css" name="fav_language" value="CSS" />
-              <label class="text-sm/[100%] -tracking-[.28px] text-black/60" for="email">I agree with the Privacy
-                Policy.</label>
+              <label class="text-sm/[100%] -tracking-[.28px] text-black/60" for="email">I agree with the Privacy Policy.</label>
             </div>
             <div class="inline-flex items-center gap-2">
-              <a href="#"
-                class="rounded border border-[#DEDEDE] bg-[#DEDEDE] px-4 py-3 text-base/[100%] font-medium -tracking-[.32px] text-black/60 hover:bg-[#6fd2c0c7] hover:text-black focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#437e73]">Request
-                a Quote</a>
+              <a href="#" class="rounded border border-[#DEDEDE] bg-[#DEDEDE] px-4 py-3 text-base/[100%] font-medium -tracking-[.32px] text-black/60 hover:bg-[#6fd2c0c7] hover:text-black focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#437e73]">Request a Quote</a>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </div>    
     <div id="footer" class="bg-gradient-to-b from-[#EDEDED] to-[#6FD2C0]">
       <div
         class="relative mx-auto max-w-[1440px] isolate flex min-h-[422px] md:min-h-[500px] lg:min-h-[574px] flex-col justify-between pb-8 px-4 pt-[1.875rem] md:px-14 md:pt-12 lg:px-[6.25rem] lg:pt-20">
@@ -1292,7 +1260,7 @@
               </li>
               <li>
                 <a class="text-lg/[120%] -tracking-[.36px] md:text-xl/[120%] md:-tracking-[.36px] lg:text-2xl/[120%] lg:-tracking-[.48px] text-black"
-                  href="#">Device-Specifi Pages</a>
+                  href="#">Recoverable Devices</a>
               </li>
               <li>
                 <a class="text-lg/[120%] -tracking-[.36px] md:text-xl/[120%] md:-tracking-[.36px] lg:text-2xl/[120%] lg:-tracking-[.48px] text-black"
